@@ -4,10 +4,16 @@
 	color: black;
 }
 
-#js{
+/* #contentToWrite,
+#myContent {
+	margin: 0% auto;
+} */
+
+#js {
 	color: white;
 	font-size: 20px;
 }
+
 ul {
 	list-style-type: none;
 	width: 950px;
