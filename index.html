@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>辞 | 一期一会</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="faviicon.ico />
 		<!-- <script src="js/index1.1.js" type="text/javascript" charset="utf-8"></script> -->
 		<script src="js/dzjone.js" type="text/javascript" charset="utf-8"></script>
 		<style type="text/css">
@@ -34,18 +35,18 @@
 			</ul>
 		</div>
 		<div id="cs">
-		<footer id="footer">
-			<div class="fixed">
-				<div id="cs1"><i>珍重&nbsp;&nbsp;来去&nbsp;&nbsp;人海</i></div>
-				<div id="cs2"><i><b>by&nbsp;.&nbsp;苍耳</b></i></div>	
-			</div>
-		</footer>
+			<footer id="footer">
+				<div class="fixed">
+					<div id="cs1"><i>珍重&nbsp;&nbsp;来去&nbsp;&nbsp;人海</i></div>
+					<div id="cs2"><i><b>by&nbsp;.&nbsp;苍耳</b></i></div>
+				</div>
+			</footer>
 		</div>
 		<!-- <header class='-center'>
 			<p>很高兴你能来，也不遗憾你离开。<p><br>
 		</header><br /><br /> -->
 		<div id="typeist">
-			<h2>很高兴你能来，也不遗憾你离开。</h2><br />
+			<h2>很高兴你能来，也不遗憾你离开。</h2><br /><br /><br /><br />
 			<p>//&nbsp;说起女孩子啊</p>
 			<p>//&nbsp;不由得先想到好看的裙摆和清澈的笑。</p>
 			<p>//&nbsp;在最好的年纪笑着跳着</p>
@@ -75,7 +76,7 @@
 		}
 
 		$(document).ready(function() {
-			var speed = 72;
+			var speed = 80;
 			var sum = 0;
 			var delay = new Array();
 			$('#typeist').children().each(function() {
@@ -84,22 +85,22 @@
 			});
 			var plen = delay.length;
 			typeEffect($('h1'), speed);
-			/* 方法一：使用let块作用域 */
+			// 方法一：使用let块作用域
 			for (let i = 2; i <= plen; ++i) {
 				setTimeout(function() {
 					$('p:nth-child(' + i + ')').css('display', 'inline-block');
 					typeEffect($('p:nth-child(' + i + ')'), speed);
 				}, delay[i - 2]);
 			}
-			/* 方法二：使用自执行函数提供闭包条件 
-			for (var i = 2; i <= plen; ++i){
-			  (function(i){
-			    setTimeout(function(){
-			      $('p:nth-child('+i+')').css('display', 'inline-block');
-			      typeEffect($('p:nth-child('+i+')'), speed);
-			    }, delay[i-2]);
-			  })(i);
-			}*/
+			// 方法二： 使用自执行函数提供闭包条件
+			// 			for (var i = 2; i <= plen; ++i) {
+			// 				(function(i) {
+			// 					setTimeout(function() {
+			// 						$('p:nth-child(' + i + ')').css('display', 'inline-block');
+			// 						typeEffect($('p:nth-child(' + i + ')'), speed);
+			// 					}, delay[i - 2]);
+			// 				})(i);
+			// 			}
 		});
 	</script>
 	<!-- <div id="js">
