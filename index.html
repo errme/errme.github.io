@@ -40,7 +40,7 @@
 			<footer id="footer">
 				<div class="fixed">
 					<div id="cs1"><i>珍重&nbsp;&nbsp;来去&nbsp;&nbsp;人海</i></div>
-					<div id="cs2"><i><b>by&nbsp;.&nbsp;苍耳</b></i></div>
+					<div id="cs2"><i><b>by&nbsp;.&nbsp;苍耳&nbsp;&nbsp;<span id="span_dt_dt"></span></b></i></div>
 				</div>
 			</footer>
 		</div>
@@ -123,6 +123,26 @@
 			window.onresize = function() {
 				zsy(;)
 			}
+		</script>
+		<script type="text/javascript">
+			function show_date_time() {
+				window.setTimeout("show_date_time()", 1000);
+				var h = new Date("3/15/2019 07:33:40"),
+					j = new Date,
+					d = j.getTime() - h.getTime(),
+					i = 86400000,
+					b = d / i,
+					g = Math.floor(b),
+					c = 24 * (b - g),
+					a = Math.floor(c),
+					f = 60 * (c - a),
+					l = Math.floor(60 * (c - a)),
+					k = Math.floor(60 * (f - l));
+				span_dt_dt.innerHTML = "运行" + g + "天" + a + "小时" + l + "分" + k + "秒"
+			}
+			show_date_time();
+			var OriginTitile = document.title,
+				titleTime;
 		</script>
 	</body>
 </html>
