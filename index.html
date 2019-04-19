@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>辞 | 一期一会</title>
-		<link rel="shortcut icon" href="images/favicon.ico"/>
+		<link rel="shortcut icon" href="images/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<!-- <link rel="shortcut icon" type="image/x-icon" href="me.ico/> -->
 		<!-- <script src="js/index1.1.js" type="text/javascript" charset="utf-8"></script> -->
@@ -11,6 +11,7 @@
 		<style type="text/css">
 			body {
 				margin: 0;
+				padding: 0;
 				height: 100%;
 				text-align: center;
 				font-family: 'Microsoft YaHei', 'Lantinghei SC', 'Open Sans', Arial, 'Hiragino Sans GB', 'STHeiti', 'WenQuanYi Micro Hei', 'SimSun', sans-serif;
@@ -22,9 +23,9 @@
 		</style>
 	</head>
 	<body>
-		<div id="yingyue" style="position: absolute; right: 40px; bottom: 100px;">
+		<!-- <div id="yingyue" style="position: absolute; right: 40px; bottom: 100px;">
 			<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=722932&auto=1&height=66"></iframe>
-		</div>
+		</div> -->
 		</script>
 		<div id="nav" class="">
 			<ul>
@@ -60,55 +61,68 @@
 			<p>Copyright &copy; 2019.Company name All rights reserved.More Templates <a href="http://www.html.cn" target="_blank"
 				 title="html中文网">html中文网</a> - Collect from <a href="http://www.html.cn" title="html中文网" target="_blank">html中文网</a></p>
 		</div> -->
-	<script type="text/javascript">
-		function typeEffect(element, speed) {
-			var text = $(element).text();
-			$(element).html('');
-			let i = 0;
-			var timer = setInterval(function() {
-				if (i < text.length) {
-					$(element).append(text.charAt(i));
-					++i;
-				} else {
-					clearInterval();
-				}
-			}, speed);
-		}
-
-		$(document).ready(function() {
-			var speed = 80;
-			var sum = 0;
-			var delay = new Array();
-			$('#typeist').children().each(function() {
-				sum += ($(this).text().length - 1) * speed + speed;
-				delay.push(sum);
-			});
-			var plen = delay.length;
-			typeEffect($('h1'), speed);
-			// 方法一：使用let块作用域
-			for (let i = 2; i <= plen; ++i) {
-				setTimeout(function() {
-					$('p:nth-child(' + i + ')').css('display', 'inline-block');
-					typeEffect($('p:nth-child(' + i + ')'), speed);
-				}, delay[i - 2]);
+		<script type="text/javascript">
+			function typeEffect(element, speed) {
+				var text = $(element).text();
+				$(element).html('');
+				let i = 0;
+				var timer = setInterval(function() {
+					if (i < text.length) {
+						$(element).append(text.charAt(i));
+						++i;
+					} else {
+						clearInterval();
+					}
+				}, speed);
 			}
-			// 方法二： 使用自执行函数提供闭包条件
-			// 			for (var i = 2; i <= plen; ++i) {
-			// 				(function(i) {
-			// 					setTimeout(function() {
-			// 						$('p:nth-child(' + i + ')').css('display', 'inline-block');
-			// 						typeEffect($('p:nth-child(' + i + ')'), speed);
-			// 					}, delay[i - 2]);
-			// 				})(i);
-			// 			}
-		});
-	</script>
-	<!-- <div id="js">
+
+			$(document).ready(function() {
+				var speed = 80;
+				var sum = 0;
+				var delay = new Array();
+				$('#typeist').children().each(function() {
+					sum += ($(this).text().length - 1) * speed + speed;
+					delay.push(sum);
+				});
+				var plen = delay.length;
+				typeEffect($('h1'), speed);
+				// 方法一：使用let块作用域
+				for (let i = 2; i <= plen; ++i) {
+					setTimeout(function() {
+						$('p:nth-child(' + i + ')').css('display', 'inline-block');
+						typeEffect($('p:nth-child(' + i + ')'), speed);
+					}, delay[i - 2]);
+				}
+				// 方法二： 使用自执行函数提供闭包条件
+				// 			for (var i = 2; i <= plen; ++i) {
+				// 				(function(i) {
+				// 					setTimeout(function() {
+				// 						$('p:nth-child(' + i + ')').css('display', 'inline-block');
+				// 						typeEffect($('p:nth-child(' + i + ')'), speed);
+				// 					}, delay[i - 2]);
+				// 				})(i);
+				// 			}
+			});
+		</script>
+		<!-- <div id="js">
 				<p>你好呀！</p>
 			</div>
 			<script type="text/javascript">
 				var ad = new AdMove("js");
 				ad.Run()
 			</script> -->
+		<div id="bfq" style="position: absolute; left: 0px; bottom: 25px;">
+			<!-- <iframe src="../wzone/index.html" id="bfq" scrolling="no" frameborder="0" width="2000px" height="1000px"></iframe> -->
+			<iframe src="wzone/index.html" id="bfq" scrolling="no" frameborder="0" onload="zsy()" height="500pxpx"></iframe>
+		</div>
+		<script type="text/javascript">
+			function zsy() {
+				var ifm = document.getElementById("ifepage");
+				ifm.height = document.documentElement.clientHeight;
+			}
+			window.onresize = function() {
+				zsy(;)
+			}
+		</script>
 	</body>
 </html>
