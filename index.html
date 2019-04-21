@@ -21,6 +21,11 @@
 				background-size: 100%;
 				overflow-x: hidden;
 			}
+
+			img {
+				height: 10px;
+				width: 10px;
+			}
 		</style>
 	</head>
 	<body>
@@ -36,12 +41,17 @@
 				<li><a href="https://xgan.me/index1.5.html" target="_blank">后会无期</a></li>
 			</ul>
 		</div>
+
 		<div id="cs">
 			<footer id="footer">
+				<div id="fl" style="position: absolute;bottom: 0px;">
+					<iframe src="fl/demo.html" width="1600px" scrolling="no" frameborder="0" height="85px"></iframe>
+				</div>
 				<div class="fixed">
-					<div id="cs1"><i>珍重&nbsp;&nbsp;来去&nbsp;&nbsp;人海</i></div>
-					<div id="cs2"><i><b>by&nbsp;.&nbsp;苍耳&nbsp;&nbsp;<span id="span_dt_dt"></span></b></i></div>
-					<!-- <p>by <i class="fa fa-heart" style="color: #d43f57;"></i> imqxms.</p> -->
+					<div id="cs1"><i>如果你来访我 我不在 请和我门外的花坐一会儿 它们很温暖</i></div>
+					<div id="cs2"><i>萌萌哒的小站<span id="span_dt_dt"></span></i></div>
+					<!-- <div id="cs2"><i><b>by&nbsp;.&nbsp;苍耳&nbsp;<img src="images/hsx.gif" >&nbsp;<span id="span_dt_dt"></span></b></i></div> -->
+					<div id="cs3"><i>by&nbsp;<img src="images/hsx.gif">&nbsp;苍耳</i></div>
 				</div>
 			</footer>
 		</div>
@@ -111,7 +121,7 @@
 		<!-- <div id="jz3" style="position: absolute; left: 30%; bottom: 50px;">
 				<iframe src="jz3/index.html" width="500px" height="" scrolling="no" frameborder="0"></iframe>
 			</div> -->
-		<div id="bfq" style="position: absolute; left: 0px; bottom: 25px;">
+		<div id="bfq" style="position: absolute; left: 0px; bottom: 40px;">
 			<!-- <iframe src="../wzone/index.html" id="bfq" scrolling="no" frameborder="0" width="2000px" height="1000px"></iframe> -->
 			<iframe src="bfq/index.html" id="bfq" scrolling="no" frameborder="0" height="500px"></iframe>
 		</div>
@@ -138,7 +148,7 @@
 					f = 60 * (c - a),
 					l = Math.floor(60 * (c - a)),
 					k = Math.floor(60 * (f - l));
-				span_dt_dt.innerHTML = "运行" + g + "天" + a + "小时" + l + "分" + k + "秒"
+				span_dt_dt.innerHTML = "已运行" + g + "天" + a + "小时" + l + "分" + k + "秒"
 			}
 			show_date_time();
 			console.log("\n %c 欢迎来到 https://xgan.me 站长：苍耳  %c 如果你来访我 我不在 请和我门外的花坐一会儿 它们很温暖 \n\n",
