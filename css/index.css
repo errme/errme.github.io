@@ -57,7 +57,7 @@ a {
 
 #cs{
 	/* vertical-align: bottom;*/
-	position: absolute;bottom: 0;
+	position: absolute;bottom: 0px;
 	width: 100%;
 	line-height: 20px;
 }
