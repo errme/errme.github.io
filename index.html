@@ -5,6 +5,7 @@
 		<meta charset="UTF-8">
 		<title>辞 | 一期一会</title>
 		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/asidenav.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<!-- <link rel="shortcut icon" type="image/x-icon" href="me.ico/> -->
 		<!-- <script src="js/index1.1.js" type="text/javascript" charset="utf-8"></script> -->
@@ -32,7 +33,7 @@
 		<!-- <div id="yingyue" style="position: absolute; right: 40px; bottom: 100px;">
 			<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=722932&auto=1&height=66"></iframe>
 		</div> -->
-		<div id="nav" class="">
+		<!-- <div id="nav" class="">
 			<ul>
 				<li><a href="https://xgan.me/index1.1.html" target="_blank">别来无恙</a></li>
 				<li><a href="https://xgan.me/index1.2.html" target="_blank">一期一会</a></li>
@@ -40,11 +41,11 @@
 				<li><a href="https://xgan.me/index1.4.html" target="_blank">不如不见</a></li>
 				<li><a href="https://xgan.me/index1.5.html" target="_blank">后会无期</a></li>
 			</ul>
-		</div>
+		</div> -->
 
 		<div id="cs">
 			<footer id="footer">
-				<div id="fl" style="position: absolute;bottom: 0px;">
+				<div id="divone" style="position: absolute;bottom: 0px;">
 					<iframe src="fl/demo.html" width="1600px" scrolling="no" frameborder="0" height="85px"></iframe>
 				</div>
 				<div class="fixed">
@@ -68,6 +69,7 @@
 			<p>//&nbsp;可冯唐说</p>
 			<p>//&nbsp;春风十里，还是不如你啊。</p>
 		</div>
+
 		<script type="text/javascript">
 			function typeEffect(element, speed) {
 				var text = $(element).text();
@@ -154,6 +156,15 @@
 			console.log("\n %c 欢迎来到 https://xgan.me 站长：苍耳  %c 如果你来访我 我不在 请和我门外的花坐一会儿 它们很温暖 \n\n",
 				"color: white; background: rgba(0,0,0,0.2); padding:5px 0;",
 				"color: gray; background: rgba(0,0,0,0.1); padding:5px 0;");
+
+
+			//获取浏览器宽度
+			$(function() {
+				$("divone").width($(window).width());
+				$("divone").resize(function() {
+					$("divone").width($(window).width());
+				})
+			})
 		</script>
 		<!-- <script>
 			document.write('<script src="//' + (location.host || 'localhost').split(':')[0] +
@@ -166,5 +177,28 @@
 				}, 500);
 			})
 		</script> -->
+		</script>
+		<div>
+			<svg width="0" height="0">
+				<defs>
+					<filter id="goo">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+						<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo"></feColorMatrix>
+						<feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
+					</filter>
+				</defs>
+			</svg>
+			<div class="aside-nav bounceInUp animated" id="aside-nav">
+				<label for="" class="aside-menu" title="按住拖动">menu</label>
+
+				<a href="https://xgan.me/index1.3.html" title="返回主页" target="_blank" class="menu-item menu-first">主页</a>
+				<a href="https://xgan.me/index1.3.html" title="QQ" target="_blank" class="menu-item menu-second">QQ</a>
+				<a href="https://xgan.me/index1.3.html" title="沙漏" target="_blank" class="menu-item menu-third">沙漏</a>
+				<a href="https://xgan.me/index1.3.html" title="苍耳" target="_blank" class="menu-item menu-line menu-fourth">苍耳</a>
+			</div>
+
+			<script type="text/javascript" src="js/jquery.min.js"></script>
+			<script type="text/javascript" src="js/asidenav.js"></script>
+
 	</body>
 </html>
