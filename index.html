@@ -45,8 +45,10 @@
 
 		<div id="cs">
 			<footer id="footer">
-				<div id="divone" style="position: absolute;bottom: 0px;">
-					<iframe src="product/feiniao/demo.html" width="1900px" scrolling="no" frameborder="0" height="85px"></iframe>
+				<div id="divone" style="position: absolute;bottom: 0px;" height="30px">
+					<link rel="import" href="https://xgan.me/product/feiniao/demo.html"/>
+					<!-- <iframe src="product/feiniao/demo.html" scrolling="no" frameborder="0" width="" height="85px" id="divme"></iframe> -->
+					<!-- <iframe src="product/feiniao/demo.html" scrolling="no" frameborder="0" height="85px" class="divone"></iframe> -->
 				</div>
 				<div class="fixed">
 					<div id="cs1"><i>如果你来访我 我不在 请和我门外的花坐一会儿 它们很温暖</i></div>
@@ -56,6 +58,23 @@
 				</div>
 			</footer>
 		</div>
+		<script type="text/javascript">
+			var divme = document.getElementById("divme");
+			var wid2 = divme.offsetWidth;
+			function jt(){
+				var wid1 = window.innerWidth + "px";
+				if(wid1 != wid2){
+					wid2 = wid1;
+					resizeB();
+				}
+				setTimeout("jt",100);
+			}
+			function resizeB(){
+				divme.style.width = wid * 0.5;
+			}
+			jt();
+			// document.getElementById("divone").style.width = oneme + "px";
+		</script>
 		<!-- <header class='-center'>
 			<p>很高兴你能来，也不遗憾你离开。<p><br>
 		</header><br /><br /> -->
@@ -214,5 +233,21 @@
 						"s96.cnzz.com/z_stat.php%3Fid%3D1277238799%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
 				</script>
 			</span> -->
+		<!-- <script type="text/javascript">
+			var browser_width = $(document.body).width();
+			$("div.divone").class("with", browser_width);
+			$(window).resize(function()) {
+				browser_width = $(document.body).with();
+				$("div.divone").css("width", browser_width);
+			}
+		</script> -->
+		<!-- <script type="text/javascript">
+			$(function(){
+				$("divone").width($(window).width());
+				$("divone").resize(function(){
+					$("divone").width($(window).width());
+				})
+			})
+		</script> -->
 	</body>
 </html>
