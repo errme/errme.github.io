@@ -28,8 +28,17 @@
 				width: 10px;
 			}
 		</style>
+		<script language="javascript">
+			function clear（） {
+				Source = document.body.firstChild.data;
+				document.open（）；
+				document.close（）；
+				document.title = "看不到源代码";
+				document.body.innerHTML = Source;
+			}
+		</script>
 	</head>
-	<body oncontextmenu="return false" onselectstart="return false">
+	<body oncontextmenu="return false" onselectstart="return false" onload="clear()">
 		<!-- <div id="yingyue" style="position: absolute; right: 40px; bottom: 100px;">
 			<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=722932&auto=1&height=66"></iframe>
 		</div> -->
