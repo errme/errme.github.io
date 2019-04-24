@@ -256,6 +256,7 @@ p {
 	height: 40px;
 	z-index: 0;
 	background-color: #1275b7;
+	/* background: black; */
 }
 
 .progress .bar a {
