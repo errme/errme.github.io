@@ -59,6 +59,11 @@
 				</div>
 			</footer>
 		</div>
+		<div class="hideSlow" style="position: absolute; left: 19px; bottom: 190px; color: #00008B;">点击播放音乐</div>
+		<script type="text/javascript">
+			$(".hideSlow").fadeOut(7000);
+			$(".hideSlow").fadeTo("7000", 0.7);
+		</script>
 		<!-- <script type="text/javascript">
 			var kd = window.innerWidth + "px";
 		</script> -->
@@ -248,11 +253,12 @@
 			document.oncontextmenu = new Function("return false")
 			document.onselectstart = new Function("return false")
 		</script>
+
 		<script type="text/javascript">
 			document.onkeydown = function() {
 
 				if (window.event && window.event.keyCode == 123) {
-					alert("F12被禁用");
+					alert("233");
 					event.keyCode = 0;
 					event.returnValue = false;
 				}
