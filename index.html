@@ -46,15 +46,12 @@
 		<div id="cs">
 			<footer id="footer">
 				<div id="divone" style="position: absolute;bottom: 0px;">
-					<!-- <link rel="import" href="https://xgan.me/product/feiniao/demo.html"/> -->
 					<!-- <iframe src="product/feiniao/demo.html" scrolling="no" frameborder="0" width="1900px" height="85px"></iframe> -->
 					<iframe src="product/feiniao/demo.html" scrolling="no" frameborder="0" style="width: 1850px; height: 85px" id="divme"></iframe>
-					<!-- <iframe src="product/feiniao/demo.html" scrolling="no" frameborder="0" height="85px" class="divone"></iframe> -->
 				</div>
 				<div class="fixed">
 					<div id="cs1"><i>如果你来访我 我不在 请和我门外的花坐一会儿 它们很温暖</i></div>
 					<div id="cs2"><i>萌萌哒的小站<span id="span_dt_dt"></span></i></div>
-					<!-- <div id="cs2"><i><b>by&nbsp;.&nbsp;苍耳&nbsp;<img src="images/hsx.gif" >&nbsp;<span id="span_dt_dt"></span></b></i></div> -->
 					<div id="cs3"><i>by&nbsp;<img src="images/hsx.gif">&nbsp;苍耳<span id="cnzz"></span></i></div>
 				</div>
 			</footer>
@@ -70,7 +67,7 @@
 		</script> -->
 		<!-- <header class='-center'>
 			<p>很高兴你能来，也不遗憾你离开。<p><br>
-		</header><br /><br /> -->
+		</header><br /> -->
 		<div id="typeist">
 			<h2>很高兴你能来，也不遗憾你离开。</h2><br /><br /><br /><br />
 			<p>//&nbsp;说起女孩子啊</p>
@@ -139,15 +136,7 @@
 			<!-- <iframe src="../wzone/index.html" id="bfq" scrolling="no" frameborder="0" width="2000px" height="1000px"></iframe> -->
 			<iframe src="product/music/index.html" id="bfq" scrolling="no" frameborder="0" height="500px"></iframe>
 		</div>
-		<!-- <script type="text/javascript">
-			function zsy() {
-				var ifm = document.getElementById("ifepage");
-				ifm.height = document.documentElement.clientHeight;
-			}
-			window.onresize = function() {
-				zsy();
-			}
-		</script> -->
+		
 		<script type="text/javascript">
 			function show_date_time() {
 				window.setTimeout("show_date_time()", 1000);
@@ -171,12 +160,12 @@
 
 
 			//获取浏览器宽度
-			$(function() {
-				$("divone").width($(window).width());
-				$("divone").resize(function() {
-					$("divone").width($(window).width());
-				})
-			})
+			// $(function() {
+			// 	$("divone").width($(window).width());
+			// 	$("divone").resize(function() {
+			// 		$("divone").width($(window).width());
+			// 	})
+			// })
 
 			var OriginTitile = document.title,
 				titleTime;
@@ -194,17 +183,6 @@
 				}
 			});
 		</script>
-		<!-- <script>
-			document.write('<script src="//' + (location.host || 'localhost').split(':')[0] +
-				':35929/livereload.js?snipver=1"></' + 'script>')
-		</script> -->
-		<!-- <script>
-			document.addEventListener('LiveReloadDisconnect', function() {
-				setTimeout(function() {
-					window.location.reload();
-				}, 500);
-			})
-		</script> -->
 		<div>
 			<svg width="0" height="0">
 				<defs>
@@ -235,13 +213,6 @@
 					"s96.cnzz.com/z_stat.php%3Fid%3D1277238799%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
 			</script>
 		</span>
-		<!-- <span id="cnzz2">
-				<script type="text/javascript">
-					var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
-					document.write(unescape("%3Cspan id='cnzz_stat_icon_1277238799'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol +
-						"s96.cnzz.com/z_stat.php%3Fid%3D1277238799%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
-				</script>
-			</span> -->
 		<!-- <script type="text/javascript">
 			var browser_width = $(document.body).width();
 			$("div.divone").class("with", browser_width);
@@ -261,7 +232,7 @@
 		<script type="text/javascript">
 			function click() {
 				if (event.button == 2) {
-					alert('233');
+					alert('233'); //禁止右键
 				}
 			}
 			document.onmousedown = click;
@@ -275,7 +246,7 @@
 			document.onkeydown = function() {
 
 				if (window.event && window.event.keyCode == 123) {
-					alert("233");
+					alert("233"); //禁止F12
 					event.keyCode = 0;
 					event.returnValue = false;
 				}
