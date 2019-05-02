@@ -89,6 +89,10 @@
 	color: #ff3f1a !important
 }
 
+#bfq {
+	z-index: 7;
+}
+
 #bj {
 	position: relative;
 	height: 520px;
