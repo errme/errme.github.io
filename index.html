@@ -1,5 +1,3 @@
-<!-- 落花浮流水 掩面忆故人-->
-<!-- 如果你来访我 我不在 请和我门外的花坐一会儿 它们很温暖-->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -14,25 +12,35 @@
 			body {
 				margin: 0;
 				padding: 0;
-				height: 100%;
+				height: 100% 10%;
 				text-align: center;
 				color: #999;
-				background: url("https://xgan.me/images/bj.jpg") no-repeat;
-				background-size: 100%;
-				overflow: hidden; //取消滚动条
+				/* background: url(images/bj3.jpg) no-repeat;
+				background-size: 100%; */
+				/* overflow: hidden; //取消滚动条 */
+				overflow-x: hidden;
 				/* overflow: scroll; */
 			}
 
-			img {
+			/* img {
 				height: 10px;
 				width: 10px;
-			}
+			} */
 		</style>
+		<script>
+			! function(e, a, t, n, c, g, s) {
+				e.GoogleAnalyticsObject = "ga", e.ga = e.ga || function() {
+						(e.ga.q = e.ga.q || []).push(arguments)
+					}, e.ga.l = 1 * new Date, g = a.createElement("script"), s = a.getElementsByTagName("script")[0], g.async = 1, g.src =
+					"https://www.google-analytics.com/analytics.js", s.parentNode.insertBefore(g, s)
+			}(window, document), ga("create", "UA-48084758-7", "auto"), ga("send", "pageview")
+		</script>
 	</head>
 	<body oncontextmenu="return false" onselectstart="return false">
 		<!-- <div id="yingyue" style="position: absolute; right: 40px; bottom: 100px;">
 			<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=722932&auto=1&height=66"></iframe>
 		</div> -->
+
 		<!-- <div id="nav" class="">
 			<ul>
 				<li><a href="https://xgan.me/index1.1.html" target="_blank">别来无恙</a></li>
@@ -42,43 +50,66 @@
 				<li><a href="https://xgan.me/index1.5.html" target="_blank">后会无期</a></li>
 			</ul>
 		</div> -->
-
-		<div id="cs">
-			<footer id="footer">
-				<div id="divone" style="position: absolute;bottom: 0px;">
-					<!-- <iframe src="product/feiniao/demo.html" scrolling="no" frameborder="0" width="1900px" height="85px"></iframe> -->
-					<iframe src="product/feiniao/demo.html" scrolling="no" frameborder="0" style="width: 1850px; height: 85px" id="divme"></iframe>
-				</div>
-				<div class="fixed">
-					<div id="cs1"><i>如果你来访我 我不在 请和我门外的花坐一会儿 它们很温暖</i></div>
-					<!-- <div id="cs2"><i>萌萌哒的小站<span id="span_dt_dt"></span></i></div> -->
-					<div id="cs2"><i>小站<span id="span_dt_dt"></span></i></div>
-					<div id="cs3"><i>by&nbsp;<img src="images/hsx.gif">&nbsp;苍耳<span id="cnzz"></span></i></div>
-				</div>
-			</footer>
+		<!-- <div id="dhlx" style="position: absolute; top: 0; width: 100%;">
+			<iframe src="dhl.html" width="100%" height="200px" scrolling="no" frameborder="0"></iframe>
+		</div> -->
+		<div id="dhlx" style="position: absolute; top: 0px; width: 100%;">
+			<iframe src="product/indx/dhl.html" scrolling="no" frameborder="0" style="height: 200px" id="dhlx"></iframe>
 		</div>
-		<div class="hideSlow" style="position: absolute; left: 19px; bottom: 190px; color: #00008B;">点击播放音乐</div>
+
+
+
+
+		<div id="bj" style="background-image: url(images/bjbj.jpg);">
+			<div id="jiangjie"><br /><br />
+				<img src="images/me.jpg" width="80px" height="80px">
+				<h2 id="xdm"><span>写代码是热爱，</span><span>写到世界充满爱！</span></h2>
+
+			</div>
+
+			<div id="zt">
+
+				<div id="mainleft">
+
+				</div>
+				<div id="mainright">
+
+				</div>
+
+
+
+				<div id="cs">
+					<footer id="footer">
+						<div id="divone" style="position: absolute; bottom: 0; left: 0; width: 100%;">
+							<!-- <iframe src="product/feiniao/demo.html" scrolling="no" frameborder="0" width="1900px" height="85px"></iframe> -->
+							<iframe src="product/feiniao/demo.html" scrolling="no" frameborder="0" style="height: 85px" id="divme"></iframe>
+						</div>
+						<div class="fixed">
+							<div id="cs1"><i>如果你来访我 我不在 请和我门外的花坐一会儿 它们很温暖</i></div>
+							<!-- <div id="cs2"><i>萌萌哒的小站<span id="span_dt_dt"></span></i></div> -->
+							<div id="cs2"><i>小站<span id="span_dt_dt"></span></i></div>
+							<div id="cs3"><i>by&nbsp;<img src="images/hsx.gif" width="10px">&nbsp;苍耳<span id="cnzz"></span></i></div>
+						</div>
+					</footer>
+				</div>
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div class="hideSlow" style="position: fixed; left: 19px; bottom: 190px; color: #00008B; position: fixed;">点击播放音乐</div>
 		<script type="text/javascript">
 			$(".hideSlow").fadeOut(9000);
 			$(".hideSlow").fadeTo("9000", 0.7);
 		</script>
-
-		<!-- <script type="text/javascript">
-			var kd = window.innerWidth + "px";
-		</script> -->
-		<!-- <header class='-center'>
-			<p>很高兴你能来，也不遗憾你离开。<p><br>
-		</header><br /> -->
-		<div id="typeist">
-			<h2>很高兴你能来，也不遗憾你离开。</h2><br /><br /><br /><br />
-			<p>//&nbsp;说起女孩子啊</p>
-			<p>//&nbsp;不由得先想到好看的裙摆和清澈的笑。</p>
-			<p>//&nbsp;在最好的年纪笑着跳着</p>
-			<p>//&nbsp;似乎所有俗世的尘埃都不舍得沾染这美好的灵魂。</p>
-			<p>//&nbsp;若非要找个词来形容，大概是，“春风”？</p>
-			<p>//&nbsp;可冯唐说</p>
-			<p>//&nbsp;春风十里，还是不如你啊。</p>
-		</div>
 
 		<script type="text/javascript">
 			function typeEffect(element, speed) {
@@ -133,7 +164,7 @@
 		<!-- <div id="jz3" style="position: absolute; left: 30%; bottom: 50px;">
 				<iframe src="jz3/index.html" width="500px" height="" scrolling="no" frameborder="0"></iframe>
 			</div> -->
-		<div id="bfq" style="position: absolute; left: 0px; bottom: 40px;">
+		<div id="bfq" style="position: fixed; left: 0px; bottom: 40px;">
 			<!-- <iframe src="../wzone/index.html" id="bfq" scrolling="no" frameborder="0" width="2000px" height="1000px"></iframe> -->
 			<iframe src="product/music/index.html" id="bfq" scrolling="no" frameborder="0" height="500px"></iframe>
 		</div>
@@ -160,7 +191,6 @@
 				"color: gray; background: rgba(0,0,0,0.1); padding:5px 0;");
 
 
-
 			var OriginTitile = document.title,
 				titleTime;
 			document.addEventListener("visibilitychange", function() {
@@ -177,7 +207,7 @@
 				}
 			});
 		</script>
-		<div>
+		<!-- <div>
 			<svg width="0" height="0">
 				<defs>
 					<filter id="goo">
@@ -195,39 +225,21 @@
 				<a href="https://xgan.me/product/indx/index1.3.html" title="沙漏" target="_blank" class="menu-item menu-third">沙漏</a>
 				<a href="https://xgan.me/product/about/index.html" title="苍耳" target="_blank" class="menu-item menu-line menu-fourth">苍耳</a>
 			</div>
-		</div>
+		</div> -->
 
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/asidenav.js"></script>
-		
+
 		<!-- 站长统计 -->
-		<span id="cnzz" style="position: absolute; right: 0px; bottom: 18px;">
+		<!-- <span id="cnzz" style="position: fixed; right: 0px; bottom: 18px;">
 			<script type="text/javascript">
 				var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
 				document.write(unescape("%3Cspan id='cnzz_stat_icon_1277238799'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol +
 					"s96.cnzz.com/z_stat.php%3Fid%3D1277238799%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
 			</script>
-		</span>
+		</span> -->
 
-		<!-- 获取浏览器宽度 -->
 		<!-- <script type="text/javascript">
-			var browser_width = $(document.body).width();
-			$("div.divone").class("with", browser_width);
-			$(window).resize(function()) {
-				browser_width = $(document.body).with();
-				$("div.divone").css("width", browser_width);
-			}
-		</script> -->
-		<!-- <script type="text/javascript">
-			$(function(){
-				$("divone").width($(window).width());
-				$("divone").resize(function(){
-					$("divone").width($(window).width());
-				})
-			})
-		</script> -->
-
-		<script type="text/javascript">
 			function click() {
 				if (event.button == 2) {
 					alert('233'); //禁止右键
@@ -256,6 +268,6 @@
 					window.event.returnValue = false;
 				}
 			}
-		</script>
+		</script> -->
 	</body>
 </html>
