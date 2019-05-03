@@ -147,7 +147,8 @@
 	position: relative;
 	right: 14%;
 	top: 120px;
-	background: white;
+	/* background: white; */
+	background: rgba(230, 244, 249, .9);
 	width: 350px;
 	height: 390px;
 }
@@ -221,8 +222,10 @@
 	z-index: 9;
 }
 
-
-
+#imgwd {
+	width="80%";
+	height="80%";
+}
 
 
 

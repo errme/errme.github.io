@@ -93,8 +93,8 @@
 						<p>//可冯唐说</p>
 						<p>//春风十里，还是不如你啊。</p>
 					</ div> -->
-					<div id="progress">
-						<img src="images/hy.gif" width="80%" height="80%">
+					<div id="fixPara">
+						<img src="images/hy.gif" width="80%" height="80%" id="imgwd">
 					</div>
 				</div>
 
@@ -291,5 +291,26 @@
 				}
 			}
 		</script> -->
+		<script type="text/javascript">
+			window.onload =
+				function() {
+					var oDiv = document.getElementById("fixPara"),
+						H = 0,
+						Y = oDiv
+					while (Y) {
+						H += Y.offsetTop;
+						Y = Y.offsetParent;
+					}
+					window.onscroll = function()
+					{
+						var s = document.body.scrollTop || document.documentElement.scrollTop
+						if (s > H) {
+							oDiv.style = "position:fixed;top:0;"
+						} else {
+							oDiv.style = ""
+						}
+					}
+				}
+		</script>
 	</body>
 </html>
