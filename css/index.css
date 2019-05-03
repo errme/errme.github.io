@@ -40,7 +40,7 @@
 	background: rgba(230, 244, 249, .9);
 	;
 	width: 100%;
-	height: 1900px;
+	height: 2500px;
 	position: relative;
 	top: 300px;
 	padding: 0;
@@ -83,6 +83,34 @@
 	width: 50%;
 	height: 660px;
 	z-index: 7;
+}
+
+#mainleft2 {
+	float: left;
+	/* margin: 0 auto; */
+	position: relative;
+	top: 120px;
+	margin: 50px 0 0 170px;
+	/* background: rgba(230, 244, 249, .9); */
+	background: white;
+	width: 50%;
+	height: 660px;
+	z-index: 7;
+	clear: both;
+}
+
+#mainleft3 {
+	float: left;
+	/* margin: 0 auto; */
+	position: relative;
+	top: 120px;
+	margin: 50px 0 0 170px;
+	/* background: rgba(230, 244, 249, .9); */
+	background: white;
+	width: 50%;
+	height: 660px;
+	z-index: 7;
+	clear: both;
 }
 
 #yes2017 {
