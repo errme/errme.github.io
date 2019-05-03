@@ -81,7 +81,7 @@
 	
 }
 
-#ydqw {
+/* #ydqw {
 	top: 4px;
 	right: 5px;
 	width: 90px;
@@ -95,7 +95,7 @@
 #ydqw:hover {
 	background-position: 0 -30px;
 	color: #60676d
-}
+} */
 
 /* #years20190503{
 	z-index: 999999;
@@ -106,9 +106,6 @@
 	position: relative;
 	right: 14%;
 	top: 120px;
-	/* left: 1000px; */
-	/* margin: 0 0 0 20px; */
-	/* margin: 0 0 0 150px; */
 	background: white;
 	width: 350px;
 	height: 450px;
