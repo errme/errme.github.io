@@ -209,7 +209,7 @@
 }
 
 #bfq {
-	z-index: 3;
+	z-index: 99;
 }
 
 #bj {
