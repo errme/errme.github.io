@@ -414,12 +414,12 @@ a {
 #pro1{
 	position: relative;
 	top: 65%;
-	left: -40px;
+	left: 2%;
 }
 #pro11{
 	position: relative;
 	top: 70%;
-	left: 14%;
+	left: -200px;
 }
 .loading img{
 	width: 90px;
