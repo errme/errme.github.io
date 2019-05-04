@@ -209,7 +209,7 @@
 }
 
 #bfq {
-	z-index: 99;
+	z-index: 7;
 }
 
 #bj {
@@ -250,10 +250,10 @@
 	z-index: 9;
 }
 
-#imgwd {
+/* #imgwd {
 	width="80%";
 	height="80%";
-}
+} */
 
 
 
@@ -393,8 +393,9 @@ a {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 10;
+	z-index: 999;
 	background-color: #ffffff;
+	/* background-color: rgba(230, 244, 249, .9); */
 }
 
 #progress .loading {
@@ -408,12 +409,17 @@ a {
 	margin: auto;
 	overflow: hidden;
 	animation: loading 1.0s infinite linear;
-	-webkit-animation: loading 2.0s infinite linear;
+	-webkit-animation: loading 3.0s infinite linear;
 }
 #pro1{
 	position: relative;
 	top: 65%;
-	left: 0;
+	left: -20px;
+}
+#pro11{
+	position: relative;
+	top: 70%;
+	left: 14%;
 }
 .loading img{
 	width: 90px;
