@@ -81,7 +81,7 @@
 					 marginheight="0" width=220 height=52 src="//music.163.com/outchain/player?type=2&id=722932&auto=0&height=32"></iframe>	 -->
 					<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=722932&auto=1&height=66"></iframe> -->
 				</div>
-				
+
 				<div id="mainright">
 					<!-- <div id="typeist">
 						<p>//说起女孩子啊</p>
@@ -96,7 +96,7 @@
 						<img src="https://xgan.me/images/hy.gif" width="80%" height="80%" id="imgwd">
 					</div>
 				</div>
-				
+
 				<div id="mainleft2">
 					<div id="yes2017910" onclick="window.open('https://xgan.me/product/article/index.html')">
 						<h5 class="zsm" style="font-size: 24px; color: black; line-height: 0; margin: 60px 0;">乍见之欢的心动和久处不厌的心定</h5>
@@ -111,7 +111,7 @@
 					 marginheight="0" width=220 height=52 src="//music.163.com/outchain/player?type=2&id=722932&auto=0&height=32"></iframe>	 -->
 					<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=722932&auto=1&height=66"></iframe> -->
 				</div>
-				
+
 				<div id="mainleft3">
 					<div id="yes2017910" onclick="window.open('https://xgan.me/product/article/index.html')">
 						<h5 class="zsm" style="font-size: 24px; color: black; line-height: 0; margin: 60px 0;">乍见之欢的心动和久处不厌的心定</h5>
@@ -126,12 +126,12 @@
 					 marginheight="0" width=220 height=52 src="//music.163.com/outchain/player?type=2&id=722932&auto=0&height=32"></iframe>	 -->
 					<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=722932&auto=1&height=66"></iframe> -->
 				</div>
-				
-				
-				
-				
-				
-				
+
+
+
+
+
+
 				<!-- <div id="mainright">
 					
 					<div id="fixPara">
@@ -160,6 +160,24 @@
 		</div>
 
 
+
+
+
+		<div id="progress">
+			<i id="pro1">如果你来访我 我不在 请和我门外的花坐一会儿 它们很温暖</i>
+			<div class="loading">
+				<img src="images/meyx.jpg" alt="loading">
+			</div>
+		</div>
+		<!-- <div>
+			<img src="images/me.jpg" alt="pic">
+		</div> -->
+		
+		
+		
+		
+		
+		
 
 
 
@@ -342,8 +360,7 @@
 						H += Y.offsetTop;
 						Y = Y.offsetParent;
 					}
-					window.onscroll = function()
-					{
+					window.onscroll = function() {
 						var s = document.body.scrollTop || document.documentElement.scrollTop
 						if (s > H) {
 							oDiv.style = "position:fixed;top:0;"
@@ -352,6 +369,21 @@
 						}
 					}
 				}
+		</script>
+
+
+
+		<script type="text/javascript">
+			window.onload = function() {
+				/**
+				 * 通过定时器实现加载
+				 */
+				var timer = null
+				var progress = document.getElementById('progress');
+				timer = setInterval(function() {
+					progress.style.display = 'none'
+				}, 2500)
+			}
 		</script>
 	</body>
 </html>
