@@ -184,6 +184,7 @@
 	background: rgba(230, 244, 249, .9);
 	width: 350px;
 	height: 390px;
+	z-index: 6;
 }
 
 #xdm {
