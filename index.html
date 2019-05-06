@@ -28,10 +28,11 @@
 				/* overflow: scroll; */
 			}
 
-			/* img {
-				border-radius: 50%;
-				z-index: 9;
-			} */
+			@font-face {
+				font-family: myCatF;
+				src: url("product/ttf/字魂49号-逍遥行书.ttf")
+			}
+			
 		</style>
 
 	</head>
@@ -47,6 +48,12 @@
 
 
 		<div id="bj" style="background-image: url(images/bjbj.jpg);">
+
+			<div class="adm">
+				<div id="adm2">
+					<h1>很高兴你能来，也不遗憾你离开。</h1>
+				</div>
+			</div>
 
 			<div id="jiangjie"><br /><br />
 				<img src="https://xgan.me/images/me.jpg" width="80px" height="80px" style="border-radius: 50%;">
@@ -72,6 +79,7 @@
 				</div>
 
 				<div id="mainright">
+
 					<!-- <div id="typeist">
 						<p>//说起女孩子啊</p>
 						<p>//不由得先想到好看的裙摆和清澈的笑。</p>
@@ -82,8 +90,8 @@
 						<p>//春风十里，还是不如你啊。</p>
 					</ div> -->
 
-					<div id="fixPara">
-						<img src="https://xgan.me/images/hy.gif" width="80%" height="80%" id="imgwd">
+					<div class="fixPara">
+						<div class="imgwd"><img src="https://xgan.me/images/hy.gif" width="80%" height="80%" id="imgwd"></div>
 					</div>
 
 				</div>
@@ -149,7 +157,6 @@
 						</div>
 
 					</footer>
-
 					<!-- 站长统计 -->
 					<span id="cnzz" style="position: absolute; left: 0; bottom: 0;">
 
@@ -160,7 +167,6 @@
 						</script>
 
 					</span>
-
 				</div>
 
 			</div>
@@ -191,10 +197,10 @@
 		<!-- <div class="hideSlow" style="position: fixed; left: 19px; bottom: 190px; color: #00008B; position: fixed;">点击播放音乐</div> -->
 
 
-		<script type="text/javascript">
+		<!-- <script type="text/javascript">
 			$(".hideSlow").fadeOut(9000);
 			$(".hideSlow").fadeTo("9000", 0.7);
-		</script>
+		</script> -->
 
 
 		<script type="text/javascript">
@@ -240,22 +246,23 @@
 				// 			}
 			});
 		</script>
+
 		<!-- <div id="js">
 				<p>你好呀！</p>
 			</div>
+			
 			<script type="text/javascript">
 				var ad = new AdMove("js");
 				ad.Run()
 			</script> -->
-		<!-- <div id="jz3" style="position: absolute; left: 30%; bottom: 50px;">
-				<iframe src="jz3/index.html" width="500px" height="" scrolling="no" frameborder="0"></iframe>
-			</div> -->
+
 
 
 		<div id="bfq" style="position: fixed; left: 0px; bottom: 40px;">
 			<!-- <iframe src="../wzone/index.html" id="bfq" scrolling="no" frameborder="0" width="2000px" height="1000px"></iframe> -->
 			<iframe src="product/music/index.html" id="bfq" scrolling="no" frameborder="0" height="500px"></iframe>
 		</div>
+
 
 
 		<script type="text/javascript">
@@ -320,14 +327,6 @@
 		</div> -->
 
 
-		<!-- 站长统计 -->
-		<!-- <span id="cnzz" style="position: absolute; right: 0px; bottom: 18px;">
-			<script type="text/javascript">
-				var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
-				document.write(unescape("%3Cspan id='cnzz_stat_icon_1277238799'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol +
-					"s96.cnzz.com/z_stat.php%3Fid%3D1277238799%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
-			</script>
-		</span> -->
 
 		<!-- <script type="text/javascript">
 			function click() {
@@ -381,9 +380,27 @@
 					}
 				}
 		</script> -->
-		
-		<script src="js/js/fd.js" type="text/javascript" charset="utf-8"></script>
 
+
+		<script type="text/javascript">
+			var oInfo = $(".imgwd");
+			var oTop = $(".fixPara").offset().top;
+			var sTop = 0;
+			$(window).scroll(function() {
+				sTop = $(this).scrollTop();
+				// oInfo.text(sTop + '-' + oTop); //这一句 只是为了看看数据 没有多大的用处
+				if (sTop >= oTop) {
+					$(".fixPara").css({
+						"position": "fixed",
+						"top": "0"
+					});
+				} else {
+					$(".fixPara").css({
+						"position": "static"
+					});
+				}
+			});
+		</script>
 
 
 		<script type="text/javascript">

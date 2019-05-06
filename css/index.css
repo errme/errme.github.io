@@ -19,9 +19,21 @@
 
 
 
-.cd-top{
+.cd-top {
 	z-index: 9;
 }
+
+.adm {
+	color: #03A9F4;
+	font-size: 36px;
+	font-family: myCatF;
+	position: relative;
+	top: 200px;
+	margin: 0 auto;
+	z-index: 11;
+}
+
+
 
 #jiangjie {
 	clear: both;
@@ -31,7 +43,7 @@
 	/* background: rgba(0, 0, 0, 0.4); */
 	background: rgba(230, 244, 249, .5);
 	position: relative;
-	top: 340px;
+	top: 320px;
 	margin: 0 auto;
 	padding: 0;
 	z-index: 3;
@@ -194,7 +206,7 @@
 }
 
 .zsme {
-	
+
 	font-size: 13px;
 	font-style: italic;
 }
@@ -315,7 +327,9 @@ a {
 	height: 80px;
 	width: 67px;
 }
-
+#cnzz{
+	z-index: 99;
+}
 #footer {
 	/* background: #f5f5f5; */
 	/* background: rgba(0, 0, 0, 0.5); */
@@ -420,20 +434,24 @@ a {
 	animation: loading 1.0s infinite linear;
 	-webkit-animation: loading 3.0s infinite linear;
 }
-#pro1{
+
+#pro1 {
 	position: relative;
 	top: 65%;
 	left: 2%;
 }
-#pro11{
+
+#pro11 {
 	position: relative;
 	top: 70%;
 	left: -200px;
 }
-.loading img{
+
+.loading img {
 	width: 90px;
 	height: 90px;
 }
+
 @keyframes loading {
 	0% {
 		transform: rotate(0deg);
@@ -453,5 +471,3 @@ a {
 		-webkit-transform: rotate(360deg);
 	}
 }
-
-
