@@ -133,7 +133,6 @@ body {
 	margin: 0 auto;
 	font: 0.9em/1.5em Montserrat, Helvetica, sans-serif;
 }
-
 #p1 {
 	text-align: right;
 	font-style: oblique;
@@ -327,12 +326,3 @@ p {
 	font-size: 10px;
 	color: #eee;
 }
-
-/* @font-face {
-	font-family: myCatF;
-	src: url("")
-}
-
-.container {
-	font-family: myCatF;
-} */
