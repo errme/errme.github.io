@@ -13,7 +13,9 @@
 #cs2,
 #cs3,
 #nav,
-#js {
+#js,
+.adm,
+.adm2 {
 	display: block;
 }
 
@@ -31,6 +33,11 @@
 	top: 200px;
 	margin: 0 auto;
 	z-index: 11;
+	clear: both;
+}
+
+.adm2 {
+	clear: both;
 }
 
 
@@ -328,9 +335,11 @@ a {
 	height: 80px;
 	width: 67px;
 }
-#cnzz{
+
+#cnzz {
 	z-index: 99;
 }
+
 #footer {
 	/* background: #f5f5f5; */
 	/* background: rgba(0, 0, 0, 0.5); */
