@@ -133,6 +133,7 @@ body {
 	margin: 0 auto;
 	font: 0.9em/1.5em Montserrat, Helvetica, sans-serif;
 }
+
 #p1 {
 	text-align: right;
 	font-style: oblique;
@@ -151,17 +152,25 @@ body {
 	/* background-color: #dce2f1; */
 }
 
+@font-face {
+	font-family: myCatF;
+	/* src: url("product/ttf/字魂49号-逍遥行书.ttf") */
+	src: url("https://xgan.me/product/ttf/字魂32号-汪子义星座体.ttf")
+}
+
 h1 {
 	margin: 40px 0;
-	font-size: 27px;
+	font-size: 50px;
 	line-height: 40px;
+	font-family: myCatF;
 	/* font-weight: bold; */
 	/* text-shadow: 0px 1px 1px #888; */
 	/* -webkit-font-smoothing: antialiased; */
 }
 
 h2 {
-	font-size: 22px;
+	font-size: 33px;
+	font-family: myCatF;
 	text-align: center;
 	color: #fff;
 	font-weight: normal;
@@ -326,3 +335,4 @@ p {
 	font-size: 10px;
 	color: #eee;
 }
+
