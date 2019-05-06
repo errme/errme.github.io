@@ -169,8 +169,8 @@ h1 {
 }
 
 h2 {
-	font-size: 33px;
-	font-family: myCatF;
+	font-size: 22px;
+	/* font-family: myCatF; */
 	text-align: center;
 	color: #fff;
 	font-weight: normal;
