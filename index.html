@@ -1,3 +1,10 @@
+<!-- 用拼音命名函数 div大忌啊 奈何英语单词太薄弱... -->
+<!-- 下一步计划 -->
+<!-- 其实还是觉得这个排版方式不太好 再改变排版 -->
+<!-- 完成其它文章 还有完成导航栏的内容 -->
+<!-- 学习简单的后端 -->
+<!-- 做留言板 评论 -->
+<!-- 如果你想做一个 -->
 <!-- by 苍耳 -->
 <!DOCTYPE html>
 <html>
@@ -33,7 +40,7 @@
 			@font-face {
 				font-family: myCatF;
 				/* src: url("product/ttf/字魂49号-逍遥行书.ttf") */
-				src: url("https://xgan.me/product/ttf/字魂32号-汪子义星座体.ttf");  //啊啊啊 .ttf加载也太慢了吧
+				src: url("https://xgan.me/product/ttf/字魂32号-汪子义星座体.ttf");  //.ttf加载也太慢了吧...本来想做成图片,想到还有打字机效果...
 			}
 		</style>
 
@@ -43,7 +50,7 @@
 			
 			<div id="dhlx" style="position: absolute; top: 0px; width: 100%;">
 				<iframe src="https://xgan.me/product/indx/dhl.html" scrolling="no" frameborder="0" style="height: 200px" id="dhlx"></iframe>
-			</div>
+			</div>  //主页元素很多，用了自己能想到的iframe添加，自己容易修改 分批
 
 		</header>
 
@@ -81,7 +88,7 @@
 
 				<div id="mainright">
 
-					<!-- <div id="typeist">
+					<!-- <div id="typeist">  //打字机
 						<p>//说起女孩子啊</p>
 						<p>//不由得先想到好看的裙摆和清澈的笑。</p>
 						<p>//在最好的年纪笑着跳着</p>
@@ -193,7 +200,7 @@
 		<!-- <div class="hideSlow" style="position: fixed; left: 19px; bottom: 190px; color: #00008B; position: fixed;">点击播放音乐</div> -->
 
 
-		<!-- <script type="text/javascript">
+		<!-- <script type="text/javascript">  //字体颜色渐消失
 			$(".hideSlow").fadeOut(9000);
 			$(".hideSlow").fadeTo("9000", 0.7);
 		</script> -->
@@ -248,7 +255,7 @@
 				<p>你好呀！</p>
 			</div>
 			
-			<script type="text/javascript">
+			<script type="text/javascript"> //Web实训5项目17飘动窗口，做出来感觉效果不怎么好
 				var ad = new AdMove("js");
 				ad.Run()
 			</script> -->
@@ -281,7 +288,7 @@
 			show_date_time();
 			console.log("\n %c 欢迎来到 https://xgan.me 站长：苍耳  %c 如果你来访我 我不在 请和我门外的花坐一会儿 它们很温暖 \n\n",
 				"color: white; background: rgba(0,0,0,0.2); padding:5px 0;",
-				"color: gray; background: rgba(0,0,0,0.1); padding:5px 0;");
+				"color: gray; background: rgba(0,0,0,0.1); padding:5px 0;");  //这个效果只有Chrome可以显示,Edge不可以
 
 
 
@@ -303,7 +310,7 @@
 		</script>
 
 
-		<!-- <div>
+		<!-- <div>  //浮动圆形menu
 			<svg width="0" height="0">
 				<defs>
 					<filter id="goo">
@@ -357,27 +364,6 @@
 			}
 		</script> -->
 
-
-		<!-- <script type="text/javascript">
-			window.onload =
-				function() {
-					var oDiv = document.getElementById("fixPara"),
-						H = 0,
-						Y = oDiv
-					while (Y) {
-						H += Y.offsetTop;
-						Y = Y.offsetParent;
-					}
-					window.onscroll = function() {
-						var s = document.body.scrollTop || document.documentElement.scrollTop
-						if (s > H) {
-							oDiv.style = "position:fixed;top:0;"
-						} else {
-							oDiv.style = ""
-						}
-					}
-				}
-		</script> -->
 
 
 		<script type="text/javascript">
