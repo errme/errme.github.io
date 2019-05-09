@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<title>web</title>
+		<style type="text/css">
+			td {
+				border: 0px;
+				text-align: center;
+				font-size: 20px;
+				font-weight: bold;
+			}
+
+			table {
+				background-color: #99cc00;
+				color: white;
+				margin: 20px auto;
+				border: 20px ridge #33ff00;
+			}
+
+			.button {
+				width: 150px;
+				height: 50px;
+				text-align: center;
+			}
+
+			body {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body onload="load();" onunload="unload();">
+		<div id="" class="">
+			<form method="post" action="">
+				<table width="600px" height="300px">
+					<tr>
+						<td colspan="2">web实训汇总</td>
+					</tr>
+					<tr>
+						<td>
+							<h3>请选择要看的章节</h3>
+						</td>
+						<td><select name="mainmenu" id="mainmenu" size="1" onchange="aa()">
+								<option value="sb1" selected>请选择要看的章节</option>
+								<option value="m1" id="m1">HTML基础</option>
+								<option value="m2" id="m2">页面布局基础</option>
+								<option value="m3" id="m3">JavaScript应用</option>
+							</select></td>
+					</tr>
+					<tr>
+						<td>
+							<h3>请选择该章节要看的实训</h3>
+						</td>
+						<td><select name="subtitle" id="subtitle" size="1" onchange="bb()">
+							</select></td>
+					</tr>
+					<tr>
+						<td>
+							<h3>请选择要看的网页</h3>
+						</td>
+						<td><select name="suptitle" size="1" id="suptitle">
+							</select></td>
+					</tr>
+					<tr>
+						<td><input type="button" value="运行" onclick="f()" class="button"></td>
+						<td><input type="reset" value="清空" class="button"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><a href="作业汇总.html">返回上一页面</a></td>
+					</tr>
+				</table>
+			</form>
+			<iframe name="iframe" src="ex1/p_1609970162_1_2.html" width="600px" height="500px" id="rect"></iframe>
+			<br>
+			<marquee width="600px" height="30px" bgcolor="#0000ff" direction="left" behavior="alternate" scrollamount="10" loop="-1">
+				<font face="隶书" size="5">欢迎来到我的主页面</font>
+			</marquee>
+		</div>
+		<p>移动互联网学院&nbsp;&nbsp;&copy16计算机班&nbsp;&nbsp;庞焜</p>
+	</body>
+</html>
