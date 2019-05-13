@@ -27,7 +27,7 @@
 .adm {
 	color: #03A9F4;
 	font-size: 36px;
-	font-family: myCatF;
+	/* font-family: myCatF; */
 	position: relative;
 	top: 200px;
 	margin: 0 auto;
