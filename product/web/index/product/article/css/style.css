@@ -134,6 +134,10 @@ body {
     font: 0.9em/1.5em Montserrat, Helvetica, sans-serif;
 }
 
+.m1 {
+    margin: 0 10px;
+}
+
 
 /* #p1 {
     text-align: right;
@@ -328,7 +332,8 @@ p {
     color: #eee;
 }
 
-#part-0,
+
+/* #part-0,
 #part-1,
 #part-2,
 #part-3,
@@ -343,11 +348,11 @@ p {
 #part-12,
 #part-13 {
     overflow: hidden;
-}
+} */
 
 iframe {
-    height: 690px;
-    width: 1600px;
+    height: 790px;
+    width: 800px;
     /* width: 60rem; */
-    transform: scale(0.7)
+    /* transform: scale(0.9) */
 }
