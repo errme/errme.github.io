@@ -29,12 +29,13 @@
     position: relative;
     top: 200px;
     margin: 0 auto;
-    z-index: 6;
+    z-index: 999;
     clear: both;
 }
 
 .adm2 {
     clear: both;
+    z-index: 999;
 }
 
 #jiangjie {
@@ -48,14 +49,14 @@
     top: 310px;
     margin: 0 auto;
     padding: 0;
-    z-index: 6;
+    z-index: 5;
 }
 
 #zt {
     background: rgba(230, 244, 249, .9);
     ;
     width: 100%;
-    height: 3900px;
+    height: 4300px;
     position: relative;
     top: 300px;
     padding: 0;
@@ -185,7 +186,7 @@
     position: relative;
     top: 4px;
     right: 5px;
-    width: 90px;
+    width: 110px;
     height: 30px;
     margin: 40px 0 0 0;
     /* border: 1px solid #c5ced7; */
@@ -218,7 +219,7 @@
 #mainright {
     float: right;
     position: relative;
-    right: 11%;
+    right: 6rem;
     top: 120px;
     /* background: white; */
     background: rgba(230, 244, 249, .9);
