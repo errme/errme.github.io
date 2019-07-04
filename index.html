@@ -46,6 +46,7 @@
             overflow-x: hidden;
             /* overflow: scroll; */
         }
+
         /* @font-face {
 				font-family: myCatF;
 				src: url("https://xgan.me/product/ttf/字魂32号-汪子义星座体.ttf");  //.ttf加载也太慢了吧...要等很久标题字
@@ -53,14 +54,17 @@
     </style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142766624-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142766624-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-142766624-1');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-142766624-1');
+    </script>
 
 </head>
 
@@ -69,7 +73,10 @@
     <header>
 
         <div id="dhlx" style="position: absolute; top: 0px; width: 100%;">
-            <iframe src="https://xgan.me/product/indx/dhl.html" scrolling="no" frameborder="0" style="height: 200px" id="dhlx"></iframe>
+
+            <iframe src="https://xgan.me/product/indx/dhl.html" scrolling="no" frameborder="0" style="height: 200px"
+                id="dhlx"></iframe>
+
         </div>
 
     </header>
@@ -78,8 +85,10 @@
     <div id="bj" style="background-image: url(https://xgan.me/images/bjone.jpg);">
 
         <div id="jiangjie"><br /><br />
+
             <img src="https://xgan.me/images/me.jpg" width="80px" height="80px" style="border-radius: 50%;">
             <h2 id="xdm"><span>写代码是热爱，</span><span>写到世界充满爱！</span></h2>
+
         </div>
 
         <div id="zt">
@@ -91,7 +100,8 @@
                         乍见之欢的心动和久处不厌的心定</h5>
                 </div>
 
-                <h5 class="zsm zsme" style="line-height: 2px; color: black; line-height: 0; margin: 0 0 40px 0;"><span id="yes2017">发表与&nbsp;2017&nbsp;9&nbsp;10</span><i>字数统计&nbsp;:&nbsp;6544</h5>
+                <h5 class="zsm zsme" style="line-height: 2px; color: black; line-height: 0; margin: 0 0 40px 0;"><span
+                        id="yes2017">发表与&nbsp;2017&nbsp;9&nbsp;10</span><i>字数统计&nbsp;:&nbsp;6544</h5>
                 <h6 class="zsm" id="jj1">生活还是以它最自然的样子一天一天过着，天冷会回温，雨后会天晴，冬季后春天会再来。而有些人，也以他最自然的方式，逐渐淡出了你的生活。</h6>
                 <img src="https://xgan.me/images/85.jpg" width="80%" height="50%">
 
@@ -172,32 +182,34 @@
                     <div class="fixed">
 
                         <div id="cs1"><i>如果你来访我 我不在 请和我门外的花坐一会儿 它们很温暖</i>
-            </div>
-            <div id="cs2"><i>小站<span id="span_dt_dt"></span></i>
-            </div>
-            <div id="cs3"><i>by&nbsp;<img src="https://xgan.me/images/hsx.gif" width="10px">&nbsp;苍耳
+                        </div>
+                        <div id="cs2"><i>小站<span id="span_dt_dt"></span></i>
+                        </div>
+                        <div id="cs3"><i>by&nbsp;<img src="https://xgan.me/images/hsx.gif" width="10px">&nbsp;苍耳
                                 <!-- <span id="cnzz"></span> --></i>
-            </div>
+                        </div>
 
-        </div>
+                    </div>
 
-        </footer>
+                </footer>
 
 
-        <!-- 站长统计 https://new.cnzz.com/v1/login.php?siteid=1277238799 -->
-        <span id="cnzz" style="position: absolute; left: 10px; bottom: 1px;">
+                <!-- 站长统计 https://new.cnzz.com/v1/login.php?siteid=1277238799 -->
+                <span id="cnzz" style="position: absolute; left: 10px; bottom: 1px;">
 
                     <script type="text/javascript">
                         var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
-                        document.write(unescape("%3Cspan id='cnzz_stat_icon_1277238799'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol +
-                            "s96.cnzz.com/z_stat.php%3Fid%3D1277238799%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+                        document.write(unescape("%3Cspan id='cnzz_stat_icon_1277238799'%3E%3C/span%3E%3Cscript src='" +
+                            cnzz_protocol +
+                            "s96.cnzz.com/z_stat.php%3Fid%3D1277238799%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"
+                        ));
                     </script>
 
                 </span>
 
-    </div>
+            </div>
 
-    </div>
+        </div>
 
     </div>
 
@@ -236,7 +248,7 @@
             var text = $(element).text();
             $(element).html('');
             let i = 0;
-            var timer = setInterval(function() {
+            var timer = setInterval(function () {
                 if (i < text.length) {
                     $(element).append(text.charAt(i));
                     ++i;
@@ -246,12 +258,12 @@
             }, speed);
         }
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             // var speed = 80;
             var speed = 390;
             var sum = 0;
             var delay = new Array();
-            $('#typeist').children().each(function() {
+            $('#typeist').children().each(function () {
                 sum += ($(this).text().length - 1) * speed + speed;
                 delay.push(sum);
             });
@@ -259,7 +271,7 @@
             typeEffect($('h1'), speed);
             // 方法一：使用let块作用域
             for (let i = 2; i <= plen; ++i) {
-                setTimeout(function() {
+                setTimeout(function () {
                     $('p:nth-child(' + i + ')').css('display', 'inline-block');
                     typeEffect($('p:nth-child(' + i + ')'), speed);
                 }, delay[i - 2]);
@@ -322,7 +334,7 @@
 
         var OriginTitile = document.title,
             titleTime;
-        document.addEventListener("visibilitychange", function() {
+        document.addEventListener("visibilitychange", function () {
             if (document.hidden) {
                 // $('[rel="shortcut icon"]').attr("href", "//https://xgan.me/images/favicon.ico");
                 document.title = "(●—●)喔哟，崩溃啦！";
@@ -330,7 +342,7 @@
             } else {
                 // $('[rel="shortcut icon"]').attr("href", "//https://xgan.me/images/favicon.ico");
                 document.title = "(/≧▽≦/)咦！又好了！ " + OriginTitile;
-                titleTime = setTimeout(function() {
+                titleTime = setTimeout(function () {
                     document.title = OriginTitile
                 }, 2000)
             }
@@ -398,7 +410,7 @@
         var oInfo = $(".imgwd");
         var oTop = $(".fixPara").offset().top;
         var sTop = 0;
-        $(window).scroll(function() {
+        $(window).scroll(function () {
             sTop = $(this).scrollTop();
             // oInfo.text(sTop + '-' + oTop); //这一句 只是为了看看数据 没有多大的用处
             if (sTop >= oTop) {
