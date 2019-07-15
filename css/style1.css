@@ -63,7 +63,7 @@ Main components
 	text-indent: 100%;
 	white-space: nowrap;
 	/* background: rgba(232, 98, 86, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%; */
-	background:  #03A9F4 url(../img/cd-top-arrow.svg) no-repeat center 50%;
+	background:  #03A9F4 url(../images/) no-repeat center 50%;
 	/* background:  steelblue; url(../img/cd-top-arrow.svg) no-repeat center 50%; */
 	visibility: hidden;
 	opacity: 0;
