@@ -140,7 +140,6 @@ li {
 	transform: translate3d(-100%, 0, 0) rotate3d(0, -1, 0, 90deg);
 }
 
-.in {}
 
 .in-top .w {
 	-webkit-animation-name: in-top;
@@ -170,7 +169,6 @@ li {
 	animation-play-state: running;
 }
 
-.out {}
 
 .out-top .w {
 	-webkit-animation-name: out-top;
