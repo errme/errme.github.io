@@ -75,8 +75,8 @@
 
             </div>
 
-            <div id="m">
-                <div id="mainright">
+            <div id="mainright">
+                <div id="pro">
 
                     <div class="fixPara">
 
@@ -265,17 +265,17 @@
 
     <script type="text/javascript">
         var oInfo = $(".fixPara");
-        var oTop = $("#mainright").offset().top;
+        var oTop = $("#pro").offset().top;
         var sTop = 0;
         $(window).scroll(function () {
             sTop = $(this).scrollTop();
             if (sTop >= oTop) {
-                $("#mainright").css({
+                $("#pro").css({
                     "position": "fixed",
                     "top": "0"
                 });
             } else {
-                $("#mainright").css({
+                $("#pro").css({
                     "position": "static"
                 });
             }

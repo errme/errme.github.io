@@ -180,7 +180,7 @@ body {
     background: white;
 }
 
-#m {
+#mainright {
     float: right;
     position: absolute;
     right: 11rem;
@@ -191,7 +191,7 @@ body {
     z-index: 6;
 }
 
-#mainright {
+#pro {
     float: right;
     position: absolute;
     right: 11rem;
