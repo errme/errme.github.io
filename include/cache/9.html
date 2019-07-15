@@ -4,63 +4,112 @@
 <head>
     <meta charset="UTF-8">
 
-    <!-- <link rel="stylesheet" href="https://www.isujin.cn/usr/themes/Mirages/css/1.7.10/mirages.min.css"> -->
 </head>
 
 <body>
-    <div id="body">
-        <div class="container">
-            <h1 class="blog-title">这孩子... 或许...</h1>
-            <h2 class="blog-description">
-                <div id="chakhsu"></div>
-                <script>
-                    var chakhsu = function(r) {
-                        function t() {
-                            return b[Math.floor(Math.random() * b.length)]
-                        }
+    <script type="text/javascript">
+        var caution = false
 
-                        function e() {
-                            return String.fromCharCode(94 * Math.random() + 33)
-                        }
+        function setCookie(name, value, expires, path, domain, secure) {
 
-                        function n(r) {
-                            for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
-                                var l = document.createElement("span");
-                                l.textContent = e(), l.style.color = t(), n.appendChild(l)
-                            }
-                            return n
-                        }
+            var curCookie = name + "=" + escape(value) +
 
-                        function i() {
-                            var t = o[c.skillI];
-                            c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
-                        } /*以下内容自定义修改*/
-                        var l = "春风十里，",
-                            o = ["还是不如你呀。", ].map(function(r) {
-                                return r + ""
-                            }),
-                            a = 2,
-                            g = 1,
-                            s = 5,
-                            d = 75,
-                            b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
-                            c = {
-                                text: "",
-                                prefixP: -s,
-                                skillI: 0,
-                                skillP: 0,
-                                direction: "forward",
-                                delay: a,
-                                step: g
-                            };
-                        i()
-                    };
-                    chakhsu(document.getElementById('chakhsu'));
-                </script>
-                <div>
-            </h2>
-            </div>
-        </div>
+                ((expires) ? ";expires=" + expires.toGMTString() : "") +
+
+                ((path) ? "; path=" + path : "") +
+
+                ((domain) ? "; domain=" + domain : "") +
+
+                ((secure) ? ";secure" : "")
+
+            if (!caution || (name + "=" + escape(value)).length <= 4000) {
+
+                document.cookie = curCookie
+
+            } else if (confirm("Cookie exceeds 4KB and will be cut!")) {
+
+                document.cookie = curCookie
+
+            }
+
+        }
+
+        function getCookie(name) {
+
+            var prefix = name + "="
+
+            var cookieStartIndex = document.cookie.indexOf(prefix)
+
+            if (cookieStartIndex == -1) {
+
+                return null
+
+            }
+
+            var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
+
+            if (cookieEndIndex == -1) {
+
+                cookieEndIndex = document.cookie.length
+
+            }
+
+            return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
+
+        }
+
+        function deleteCookie(name, path, domain) {
+
+            if (getCookie(name)) {
+
+                document.cookie = name + "=" +
+
+                    ((path) ? "; path=" + path : "") +
+
+                    ((domain) ? "; domain=" + domain : "") +
+
+                    "; expires=Thu, 01-Jan-70 00:00:01 GMT"
+
+            }
+
+        }
+
+        function fixDate(date) {
+
+            var base = new Date(0)
+
+            var skew = base.getTime()
+
+            if (skew > 0) {
+
+                date.setTime(date.getTime() - skew)
+
+            }
+
+        }
+
+        var now = new Date()
+
+        fixDate(now)
+
+        now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
+
+        var visits = getCookie("counter")
+
+        if (!visits) {
+
+            visits = 1;
+
+        } else {
+
+            visits = parseInt(visits) + 1;
+
+        }
+
+        setCookie("counter", visits, now)
+
+        document.write("您是到访的第" + visits + "位用户！")
+    </script>
 </body>
 
 </html
