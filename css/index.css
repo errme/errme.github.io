@@ -16,7 +16,7 @@ body {
 
 @font-face {
     font-family: myCatF;
-    src: url("product/ttf/字魂32号-汪子义星座体.ttf");
+    src: url("https://xgan.me/include/templates/ttf/字魂32号-汪子义星座体.ttf");
 }
 
 #background {
@@ -30,24 +30,6 @@ body {
     margin: 0 auto;
     text-align: center;
 }
-
-
-/* 
-.adm {
-    color: #03A9F4;
-    font-size: 50px;
-    font-family: myCatF;
-    position: relative;
-    top: 200px;
-    margin: 0 auto;
-    z-index: 9;
-    z-index: 9;
-}
-
-.adm2 {
-    clear: both;
-    z-index: 9;
-} */
 
 .cd-top {
     z-index: 6;
@@ -438,9 +420,10 @@ body.theme-white.theme-sunset #footer {
     text-decoration: none
 }
 
-#footer .container {
+
+/* #footer .container {
     margin-top: 0.3125rem
-}
+} */
 
 #footer h1,
 #footer h2,
@@ -465,4 +448,18 @@ body.theme-white #footer p {
 
 a {
     text-decoration: none;
+}
+
+
+/* .blog-title {
+    color: white;
+    font-size: 36px;
+    margin: 0 0 2em 0;
+    padding: 5em 0 1rem 0;
+} */
+
+.blog-description {
+    color: white;
+    font-size: 18px;
+    padding: 11em 0 0;
 }
