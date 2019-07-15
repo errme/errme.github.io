@@ -7,7 +7,7 @@
            The rule means that requests to /test/status/ will be redirected to /rewrite-status
            the url will be rewritten.
        </note>
-       <from>^/web/view/index\-([0-9]+)$</from>
-       <to>/web/view/index.shtml?_vwebid=$1&amp;type=show</to>
+       <from>^/product/</from>
+       <to>/product/index.shtml?_vwebid=$1&amp;type=show</to>
    </rule>
 </urlrewrite>
