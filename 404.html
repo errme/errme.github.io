@@ -47,6 +47,22 @@
   </header>
   <script type="text/javascript" src="https://static.noisky.cn/homepage/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="https://static.noisky.cn/homepage/main.js"></script>
+
+
+  <audio autoplay loop id="music">
+    <source src="include/templates/music/music/music.mp3" type="audio/mpeg">
+  </audio>
+  <script>
+    function a() {
+      var audio = document.getElementById('music');
+      if (audio.paused) {
+        audio.play();//audio.play();// 播放  
+      }
+      else {
+        audio.pause();// 暂停
+      }
+    }
+  </script>
 </body>
 
 </html>
