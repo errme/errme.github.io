@@ -45,177 +45,182 @@
 
     <div id="loader"></div>
 
-    <div id="background" style="background-image: url(images/banner.jpg);">
+    <!-- <div id="background" style="background-image: url(images/banner.jpg);"> -->
 
-        <div class="container">
-            <a class="posttitle" href="https://xgan.me/233">233</a>
-            <!-- <h1 class="blog-title">Hi , xgan</h1> -->
-            <h2 class="blog-description">
-                <div id="chakhsu"></div>
-                <script>
-                    var chakhsu = function(r) {
-                        function t() {
-                            return b[Math.floor(Math.random() * b.length)]
+    <div class="container" id="background" style="background-image: url(images/banner.jpg);">
+
+        <a class="posttitle" href="https://xgan.me/233">233</a>
+
+        <!-- <h1 class="blog-title">Hi , xgan</h1> -->
+
+        <h2 class="blog-description">
+
+            <div id="chakhsu"></div>
+
+            <script>
+                var chakhsu = function(r) {
+                    function t() {
+                        return b[Math.floor(Math.random() * b.length)]
+                    }
+
+                    function e() {
+                        return String.fromCharCode(94 * Math.random() + 33)
+                    }
+
+                    function n(r) {
+                        for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+                            var l = document.createElement("span");
+                            l.textContent = e(), l.style.color = t(), n.appendChild(l)
                         }
+                        return n
+                    }
 
-                        function e() {
-                            return String.fromCharCode(94 * Math.random() + 33)
-                        }
+                    function i() {
+                        var t = o[c.skillI];
+                        c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+                    } /*以下内容自定义修改*/
+                    var l = "我一扑向你，",
+                        o = ["就感到无限的温柔。", ].map(function(r) {
+                            return r + ""
+                        }),
+                        a = 2,
+                        g = 1,
+                        s = 5,
+                        d = 75,
+                        b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+                        c = {
+                            text: "",
+                            prefixP: -s,
+                            skillI: 0,
+                            skillP: 0,
+                            direction: "forward",
+                            delay: a,
+                            step: g
+                        };
+                    i()
+                };
+                chakhsu(document.getElementById('chakhsu'));
+            </script>
 
-                        function n(r) {
-                            for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
-                                var l = document.createElement("span");
-                                l.textContent = e(), l.style.color = t(), n.appendChild(l)
-                            }
-                            return n
-                        }
+        </h2>
 
-                        function i() {
-                            var t = o[c.skillI];
-                            c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
-                        } /*以下内容自定义修改*/
-                        var l = "我一扑向你，",
-                            o = ["就感到无限的温柔。", ].map(function(r) {
-                                return r + ""
-                            }),
-                            a = 2,
-                            g = 1,
-                            s = 5,
-                            d = 75,
-                            b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
-                            c = {
-                                text: "",
-                                prefixP: -s,
-                                skillI: 0,
-                                skillP: 0,
-                                direction: "forward",
-                                delay: a,
-                                step: g
-                            };
-                        i()
-                    };
-                    chakhsu(document.getElementById('chakhsu'));
-                </script>
-                <div>
-            </h2>
-            </div>
-        </div>
+    </div>
 
-        <div id="introduction" onclick="window.open('https://xgan.me')"><br /><br />
+    <div id="introduction" onclick="window.open('https://xgan.me')"><br /><br />
 
-            <img src="images/logo.jpg" width="90px" height="90px" style="border-radius: 50%;">
-            <h2 id="xdm"><span>今天月色很美，</span><span>风也温柔。</span></h2>
+        <img src="images/logo.jpg" width="90px" height="90px" style="border-radius: 50%;">
+        <h2 id="xdm"><span>今天月色很美，</span><span>风也温柔。</span></h2>
 
-        </div>
+    </div>
 
-        <div id="subject">
+    <div id="subject">
 
-            <div id="mainleft">
+        <div id="mainleft">
 
-                <div id="year2017910" onclick="window.open('https://xgan.me/include/product/article/index.html')">
-                    <h5 class="title">印象中的夏天</h5>
-                    </h5>
-                </div>
-
-
-                <h5 class="titlemin" style="line-height: 2px; color: black; line-height: 0; margin: 0 0 40px 0;"><span id="year2017">发表与&nbsp;2016&nbsp;6&nbsp;10</span>字数统计&nbsp;:&nbsp;6544</h5>
-                <h6 class="title" id="introductionart">生活还是以它最自然的样子一天一天过着，天冷会回温，雨后会天晴，冬季后春天会再来。而有些人，也以他最自然的方式，逐渐淡出了你的生活。
-                </h6>
-                <img src="https://xgan.me/images/85.jpg" width="80%" height="50%">
-
-                <div id="read" class="title" onclick="window.open('https://xgan.me/include/product/article/index.html')">
-                    <h5 id="ready">阅读全文&nbsp;&raquo;</h5>
-                </div>
-
+            <div id="year2017910" onclick="window.open('https://xgan.me/include/product/article/index.html')">
+                <h5 class="title">印象中的夏天</h5>
+                </h5>
             </div>
 
-            <div id="mainright">
-                <div id="pro">
 
-                    <div class="fixPara">
+            <h5 class="titlemin" style="line-height: 2px; color: black; line-height: 0; margin: 0 0 40px 0;"><span id="year2017">发表与&nbsp;2016&nbsp;6&nbsp;10</span>字数统计&nbsp;:&nbsp;6544</h5>
+            <h6 class="title" id="introductionart">生活还是以它最自然的样子一天一天过着，天冷会回温，雨后会天晴，冬季后春天会再来。而有些人，也以他最自然的方式，逐渐淡出了你的生活。
+            </h6>
+            <img src="https://xgan.me/images/85.jpg" width="80%" height="50%">
+
+            <div id="read" class="title" onclick="window.open('https://xgan.me/include/product/article/index.html')">
+                <h5 id="ready">阅读全文&nbsp;&raquo;</h5>
+            </div>
+
+        </div>
+
+        <div id="mainright">
+            <div id="pro">
+
+                <div class="fixPara">
 
 
-                        <div class="imgwd">
+                    <div class="imgwd">
 
-                            <img src="images/0.jpg" alt="" style="width: 300px; height: 190px; margin: 30px 0 20px 0" id="igwd1">
+                        <img src="images/0.jpg" alt="" style="width: 300px; height: 190px; margin: 30px 0 20px 0" id="igwd1">
 
-                            <h6 style="color:black;">今天月色很美，风也温柔。</h6>
+                        <h6 style="color:black;">今天月色很美，风也温柔。</h6>
 
-                            <div id="share">
+                        <div id="share">
 
-                                <ul>
+                            <ul>
 
-                                    <li>
-                                        <a href="https://github.com/nianme" title="GitHub"><img src="images/github.png" alt="GitHub" width="30px" height="30px"></a>
-                                    </li>
+                                <li>
+                                    <a href="https://github.com/nianme" title="GitHub"><img src="images/github.png" alt="GitHub" width="30px" height="30px"></a>
+                                </li>
 
-                                    <li>
-                                        <a href="https://space.bilibili.com/21184907" title="bilibili"><img src="images/bilibili1.png" alt="博客" width="30px" height="30px"></a>
-                                    </li>
+                                <li>
+                                    <a href="https://space.bilibili.com/21184907" title="bilibili"><img src="images/bilibili1.png" alt="博客" width="30px" height="30px"></a>
+                                </li>
 
-                                    <li>
-                                        <a href="tencent://Message/?Uin=1459829778&amp;websiteName=q-zone.qq.com&amp;Menu=yes" title="QQ"><img src="images/qqm.png" alt="QQ" width="30px" height="30px"></a>
-                                    </li>
+                                <li>
+                                    <a href="tencent://Message/?Uin=1459829778&amp;websiteName=q-zone.qq.com&amp;Menu=yes" title="QQ"><img src="images/qqm.png" alt="QQ" width="30px" height="30px"></a>
+                                </li>
 
-                                    <li>
-                                        <a href="https://xgan.me" title="博客"><img src="images/wz.png" alt="博客" width="30px" height="30px"></a>
-                                    </li>
+                                <li>
+                                    <a href="https://xgan.me" title="博客"><img src="images/wz.png" alt="博客" width="30px" height="30px"></a>
+                                </li>
 
-                                </ul>
-
-                            </div>
-
-                            <div id="gy">
-                                <a href="" title="关闭页面"><img src="images/gb1.png" alt="" width="20px" height="20px" onclick="custom_close()"></a>
-                            </div>
-
+                            </ul>
 
                         </div>
+
+                        <div id="gy">
+                            <a href="" title="关闭页面"><img src="images/gb1.png" alt="" width="20px" height="20px" onclick="custom_close()"></a>
+                        </div>
+
 
                     </div>
 
                 </div>
-            </div>
-
-            <div id="mainleft2">
-
-                <div id="yes2017910" onclick="window.open('https://xgan.me/include/article/index.html')">
-                    <h5 class="title" style="font-size: 24px; color: black; line-height: 0; margin: 60px 0 40px 0;">
-                        那些年，我们一起错过的青春 </h5>
-                </div>
-
-                <h5 class="titlemin" style="line-height: 2px; color: black; line-height: 0; margin: 0 0 40px 0;"><span id="yes2017">发表与&nbsp;2015&nbsp;6&nbsp;6</span>字数统计&nbsp;:&nbsp;2375<span class="leancloud-visitors-count"></span></h5>
-                <h6 class="title" id="introductionart">生活还是以它最自然的样子一天一天过着，天冷会回温，雨后会天晴，冬季后春天会再来。而有些人，也以他最自然的方式，逐渐淡出了你的生活。
-                </h6>
-                <img src="https://xgan.me/images/85.jpg" width="80%" height="50%">
-
-                <div id="read" class="title" onclick="window.open('https://xgan.me/include/article/index.html')">
-                    <h5 id="ready">阅读全文&nbsp;&raquo;</h5>
-                </div>
 
             </div>
+        </div>
 
-            <div id="mainleft3">
+        <div id="mainleft2">
 
-                <div id="yes2017910" onclick="window.open('https://xgan.me/include/article/index.html')">
-                    <h5 class="title" style="font-size: 24px; color: black; line-height: 0; margin: 60px 0 40px 0;">印象中的夏天
-                    </h5>
-                </div>
+            <div id="yes2017910" onclick="window.open('https://xgan.me/include/article/index.html')">
+                <h5 class="title" style="font-size: 24px; color: black; line-height: 0; margin: 60px 0 40px 0;">
+                    那些年，我们一起错过的青春 </h5>
+            </div>
 
+            <h5 class="titlemin" style="line-height: 2px; color: black; line-height: 0; margin: 0 0 40px 0;"><span id="yes2017">发表与&nbsp;2015&nbsp;6&nbsp;6</span>字数统计&nbsp;:&nbsp;2375<span class="leancloud-visitors-count"></span></h5>
+            <h6 class="title" id="introductionart">生活还是以它最自然的样子一天一天过着，天冷会回温，雨后会天晴，冬季后春天会再来。而有些人，也以他最自然的方式，逐渐淡出了你的生活。
+            </h6>
+            <img src="https://xgan.me/images/85.jpg" width="80%" height="50%">
 
-                <h5 class="titlemin" style="line-height: 2px; color: black; line-height: 0; margin: 0 0 40px 0;"><span id="yes2017">发表与&nbsp;2016&nbsp;6&nbsp;10</span>字数统计&nbsp;:&nbsp;6544</h5>
-                <h6 class="title" id="introductionart">生活还是以它最自然的样子一天一天过着，天冷会回温，雨后会天晴，冬季后春天会再来。而有些人，也以他最自然的方式，逐渐淡出了你的生活。
-                </h6>
-                <img src="https://xgan.me/images/85.jpg" width="80%" height="50%">
+            <div id="read" class="title" onclick="window.open('https://xgan.me/include/article/index.html')">
+                <h5 id="ready">阅读全文&nbsp;&raquo;</h5>
+            </div>
 
-                <div id="read" class="title" onclick="window.open('https://xgan.me/include/xgan233.html')">
-                    <h5 id="ready">阅读全文&nbsp;&raquo;</h5>
-                </div>
+        </div>
 
+        <div id="mainleft3">
+
+            <div id="yes2017910" onclick="window.open('https://xgan.me/include/article/index.html')">
+                <h5 class="title" style="font-size: 24px; color: black; line-height: 0; margin: 60px 0 40px 0;">印象中的夏天
+                </h5>
             </div>
 
 
-            <!-- <footer id="footer">
+            <h5 class="titlemin" style="line-height: 2px; color: black; line-height: 0; margin: 0 0 40px 0;"><span id="yes2017">发表与&nbsp;2016&nbsp;6&nbsp;10</span>字数统计&nbsp;:&nbsp;6544</h5>
+            <h6 class="title" id="introductionart">生活还是以它最自然的样子一天一天过着，天冷会回温，雨后会天晴，冬季后春天会再来。而有些人，也以他最自然的方式，逐渐淡出了你的生活。
+            </h6>
+            <img src="https://xgan.me/images/85.jpg" width="80%" height="50%">
+
+            <div id="read" class="title" onclick="window.open('https://xgan.me/include/xgan233.html')">
+                <h5 id="ready">阅读全文&nbsp;&raquo;</h5>
+            </div>
+
+        </div>
+
+
+        <!-- <footer id="footer">
 
                 <div id="divone" style="position: absolute; bottom: 0; left: 0; width: 100%;">
 
@@ -235,22 +240,18 @@
 
             </footer> -->
 
-            <footer id="footer">
+        <footer id="footer">
 
-                <div class="container">
+            <div class="container">
 
-                    <p>Copyright &copy; 2019 • Theme by : <a class="posttitle" href="http://xgan.me" target="_self">Canger</a> • Run Time :
-                        <a class="posttitle" href="https://xgan.me/include/log/sjz/index.html" target="_self"><span
+                <p>Copyright &copy; 2019 • Theme by : <a class="posttitle" href="http://xgan.me" target="_self">Canger</a> • Run Time :
+                    <a class="posttitle" href="https://xgan.me/include/log/sjz/index.html" target="_self"><span
                             id="span_dt_dt"></span></a>
-                    </p>
+                </p>
 
-                </div>
+            </div>
 
-            </footer>
-
-        </div>
-
-
+        </footer>
 
     </div>
 
