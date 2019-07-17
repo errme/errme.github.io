@@ -19,8 +19,7 @@ body {
     src: url("https://xgan.me/include/templates/ttf/字魂32号-汪子义星座体.ttf");
 }
 
-
-/* #background {
+#background {
     position: relative;
     height: 620px;
     width: 100%;
@@ -29,7 +28,8 @@ body {
     background-repeat: no-repeat;
     margin: 0 auto;
     text-align: center;
-} */
+    z-index: 9;
+}
 
 #introduction {
     width: 70%;
