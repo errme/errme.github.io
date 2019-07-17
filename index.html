@@ -292,11 +292,11 @@
             titleTime;
         document.addEventListener("visibilitychange", function() {
             if (document.hidden) {
-                // $('[rel="shortcut icon"]').attr("href", "//https://xgan.me/images/favicon.ico");
+                $('[rel="shortcut icon"]').attr("href", "//https://xgan.me/images/leave.ico");
                 document.title = "(●—●)喔哟，崩溃啦！";
                 clearTimeout(titleTime)
             } else {
-                // $('[rel="shortcut icon"]').attr("href", "//https://xgan.me/images/favicon.ico");
+                $('[rel="shortcut icon"]').attr("href", "//https://xgan.me/images/favicon.ico");
                 document.title = "(/≧▽≦/)咦！又好了！ " + OriginTitile;
                 titleTime = setTimeout(function() {
                     document.title = OriginTitile
