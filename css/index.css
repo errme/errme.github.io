@@ -105,6 +105,10 @@ body {
     font-size: 13px;
     position: relative;
     right: -70px;
+    /* line-height: 2px;
+    color: black;
+    line-height: 0; */
+    margin: 0 0 30px 0;
 }
 
 #introductionart {
@@ -138,6 +142,7 @@ body {
     top: 4px;
     left: 40%;
     line-height: 30px;
+    color: white;
 }
 
 #ready {
@@ -151,6 +156,10 @@ body {
     border: 1px solid;
     border-radius: 3px;
     background-image: linear-gradient(#03A9F4, #03A9F4);
+    color: white;
+}
+
+#ready a {
     color: white;
 }
 
@@ -205,11 +214,43 @@ body {
     right: 0;
 }
 
-#xdm {
+#yszm {
     font-size: 17px;
     font-weight: 550;
-    /* font-family: myCatF; */
     margin: 17px 0 0 0;
+}
+
+#title a:after {
+    position: absolute;
+    bottom: -0.0625rem;
+    left: 100%;
+    width: 0;
+    /* border-bottom: 0.0625rem solid #1abc9c; */
+    border-bottom: 0.0625rem solid black;
+    content: "";
+    -webkit-transition: width 350ms, left 350ms;
+    -moz-transition: width 350ms, left 350ms;
+    -ms-transition: width 350ms, left 350ms;
+    -o-transition: width 350ms, left 350ms;
+    transition: width 350ms, left 350ms
+}
+
+#title a:hover:after {
+    left: 0;
+    width: 100%;
+    -webkit-transition: width 350ms;
+    -moz-transition: width 350ms;
+    -ms-transition: width 350ms;
+    -o-transition: width 350ms;
+    transition: width 350ms
+}
+
+#title a {
+    /* color: #1abc9c; */
+    color: black;
+    text-decoration: none;
+    position: relative;
+    white-space: normal
 }
 
 #introduction img {
@@ -221,11 +262,11 @@ body {
     transform: scale(1.2);
 }
 
-#introduction #xdm span:nth-child(1) {
+#introduction #yszm span a:nth-child(1) {
     color: #00a7e0 !important
 }
 
-#introduction #xdm span:nth-child(2) {
+#introduction #yszm span a:nth-child(2) {
     color: #00a7e0 !important
 }
 
@@ -244,7 +285,7 @@ li {
     letter-spacing: 20px;
 }
 
-a:hover img {
+#share a:hover img {
     transform: scale(1.2);
     opacity: 0.07;
 }
@@ -252,37 +293,6 @@ a:hover img {
 .cd-top {
     z-index: 6;
 }
-
-
-/* #footer {
-    clear: both;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    line-height: 20px;
-    text-align: center;
-    width: 100%;
-    padding: 0.8rem 0;
-    background: black
-} */
-
-
-/* #cs1 {
-    font-size: 13px;
-    color: #0033CC;
-}
-
-#cs2 {
-    font-size: 13px;
-    color: #0033CC;
-}
-
-#cs3 {
-    font-size: 12px;
-    color: #0033CC;
-} */
 
 
 /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
@@ -310,14 +320,34 @@ a:hover img {
     border-radius: 7px 7px 7px 7px;
 }
 
-#footer a,
-.comments a {
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    clear: both;
+    width: 100%;
+    color: #ccc;
+    background: #ffffff;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 400;
+    font-family: Consolas, Menlo, Monaco, "lucida console", "Liberation Mono", "Courier New", "andale mono", monospaceX, monospace, sans-serif;
+    padding: 1.25rem 0;
+    background-color: #2c2a2a;
+    -webkit-transition: 0.5s ease all;
+    -moz-transition: 0.5s ease all;
+    -ms-transition: 0.5s ease all;
+    -o-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+}
+
+#footer a {
     position: relative;
     white-space: normal
 }
 
-#footer a:after,
-.comments a:after {
+#footer a:after {
     position: absolute;
     bottom: -0.0625rem;
     left: 100%;
@@ -353,33 +383,6 @@ body.edge #footer a:after {
     }
 }
 
-.comments {
-    background: #ffffff;
-    z-index: 999;
-}
-
-#footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    clear: both;
-    width: 100%;
-    color: #ccc;
-    background: #ffffff;
-    text-align: center;
-    font-size: .8rem;
-    font-weight: 400;
-    font-family: Consolas, Menlo, Monaco, "lucida console", "Liberation Mono", "Courier New", "andale mono", monospaceX, monospace, sans-serif;
-    padding: 1.25rem 0;
-    background-color: #2c2a2a;
-    -webkit-transition: 0.5s ease all;
-    -moz-transition: 0.5s ease all;
-    -ms-transition: 0.5s ease all;
-    -o-transition: 0.5s ease all;
-    transition: 0.5s ease all;
-}
-
 body.theme-white #footer {
     background-color: #fafafa;
     color: #777;
@@ -395,10 +398,9 @@ body.theme-white.theme-sunset #footer {
     text-decoration: none
 }
 
-
-/* #footer .container {
+#footer .containerfooter {
     margin-top: 0.3125rem
-} */
+}
 
 #footer h1,
 #footer h2,
