@@ -189,6 +189,10 @@ body {
     z-index: 6;
 }
 
+#igwd1 {
+    margin: 30px 0 20px 0;
+}
+
 #pro {
     float: right;
     position: absolute;
