@@ -35,6 +35,43 @@
 
     <script src="js/disa.js"></script>
 
+    <!-- <script type="text/javascript">
+
+        (function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == 'ipad';
+            var bIsIphone = sUserAgent.match(/iphone os/i) == 'iphone os';
+            var bIsMidp = sUserAgent.match(/midp/i) == 'midp';
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == 'rv:1.2.3.4';
+            var bIsUc = sUserAgent.match(/ucweb/i) == 'web';
+            var bIsCE = sUserAgent.match(/windows ce/i) == 'windows ce';
+            var bIsWM = sUserAgent.match(/windows mobile/i) == 'windows mobile';
+            var bIsAndroid = sUserAgent.match(/android/i) == 'android';
+            if (bIsIpad || bIsIphone || bIsMidp || bIsUc7 || bIsUc || bIsCE || bIsWM || bIsAndroid) {
+                window.location.href = 'phone.html';
+            }
+        })();
+    </script> -->
+    <!-- <script type="text/javascript">
+        //平台、设备和操作系统 
+        var system = {
+            win: false,
+            mac: false,
+            xll: false,
+            ipad: false
+        };
+        //检测平台 
+        var p = navigator.platform;
+        system.win = p.indexOf("Win") == 0;
+        system.mac = p.indexOf("Mac") == 0;
+        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+        system.ipad = (navigator.userAgent.match(/iPad/i) != null) ? true : false;
+        //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面 
+        if (system.win || system.mac || system.xll || system.ipad) {} else {
+            window.location.href = "http://www.jdpatro.com/3g/";
+        }
+    </script> -->
+
 </head>
 
 <body class="theme-white color-default card  desktop windows chrome not-safari use-sidebar">
@@ -52,7 +89,7 @@
                 <div id="chakhsu"></div>
 
                 <script>
-                    var chakhsu = function (r) {
+                    var chakhsu = function(r) {
                         function t() {
                             return b[Math.floor(Math.random() * b.length)]
                         }
@@ -74,7 +111,7 @@
                             c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
                         } /*以下内容自定义修改*/
                         var l = "我一扑向你，",
-                            o = ["就感到无限的温柔呀。",].map(function (r) {
+                            o = ["就感到无限的温柔呀。", ].map(function(r) {
                                 return r + ""
                             }),
                             a = 2,
@@ -100,146 +137,139 @@
 
             </h2>
 
+            </div>
+
         </div>
 
-    </div>
+        <div id="introduction"><br /><br />
 
-    <div id="introduction"><br /><br />
+            <a class="posttitle" href="https://xgan.me"><img src="images/logo.jpg" width="90rem" height="90rem" style="border-radius: 50%;"></a>
 
-        <a class="posttitle" href="https://xgan.me"><img src="images/logo.jpg" width="90rem" height="90rem"
-                style="border-radius: 50%;"></a>
-
-        <h2 id="yszm"><span><a class="posttitle" href="https://xgan.me">今天月色很美，</a></span><span><a class="posttitle"
+            <h2 id="yszm"><span><a class="posttitle" href="https://xgan.me">今天月色很美，</a></span><span><a class="posttitle"
                     href="https://xgan.me">风也温柔。</a></span>
-        </h2>
-
-    </div>
-
-    <div id="subject">
-
-        <div id="mainleft">
-
-            <div id="year2017910">
-                <h5 class="title" id="title"><a class="posttitle" href="https://xgan.me">印象中的夏天</a></h5>
-            </div>
-
-
-            <h5 class="titlemin"><span id="year2017">发表与&nbsp;2016&nbsp;6&nbsp;10</span>字数统计&nbsp;:&nbsp;6544</h5>
-            <h6 class="title" id="introductionart">生活还是以它最自然的样子一天一天过着，天冷会回温，雨后会天晴，冬季后春天会再来。而有些人，也以他最自然的方式，逐渐淡出了你的生活。
-            </h6>
-            <img src="https://xgan.me/images/85.jpg" width="610rem" height="330rem">
-
-            <div id="read">
-                <h5 id="ready"><a class="posttitle" href="https://xgan.me">阅读全文&nbsp;&raquo;</a></h5>
-            </div>
+            </h2>
 
         </div>
 
-        <div id="mainright">
+        <div id="subject">
 
-            <div id="pro">
+            <div id="mainleft">
 
-                <div class="fixPara">
+                <div id="year2017910">
+                    <h5 class="title" id="title"><a class="posttitle" href="https://xgan.me">印象中的夏天</a></h5>
+                </div>
 
 
-                    <div class="imgwd">
+                <h5 class="titlemin"><span id="year2017">发表与&nbsp;2016&nbsp;6&nbsp;10</span>字数统计&nbsp;:&nbsp;6544</h5>
+                <h6 class="title" id="introductionart">生活还是以它最自然的样子一天一天过着，天冷会回温，雨后会天晴，冬季后春天会再来。而有些人，也以他最自然的方式，逐渐淡出了你的生活。
+                </h6>
+                <img src="https://xgan.me/images/85.jpg" width="610rem" height="330rem">
 
-                        <img src="images/0.jpg" alt="" id="igwd1" width="300px" height="190px">
+                <div id="read">
+                    <h5 id="ready"><a class="posttitle" href="https://xgan.me">阅读全文&nbsp;&raquo;</a></h5>
+                </div>
 
-                        <h6 style="color:black;">今天月色很美，风也温柔。</h6>
+            </div>
 
-                        <div id="share">
+            <div id="mainright">
 
-                            <ul>
+                <div id="pro">
 
-                                <li>
-                                    <a href="https://github.com/nianme" title="GitHub"><img src="images/github.png"
-                                            alt="GitHub" width="30px" height="30px"></a>
-                                </li>
+                    <div class="fixPara">
 
-                                <li>
-                                    <a href="https://space.bilibili.com/21184907" title="bilibili"><img
-                                            src="images/bilibili1.png" alt="博客" width="30px" height="30px"></a>
-                                </li>
 
-                                <li>
-                                    <a href="tencent://Message/?Uin=1459829778&amp;websiteName=q-zone.qq.com&amp;Menu=yes"
-                                        title="QQ"><img src="images/qqm.png" alt="QQ" width="30px" height="30px"></a>
-                                </li>
+                        <div class="imgwd">
 
-                                <li>
-                                    <a href="https://xgan.me" title="博客"><img src="images/wz.png" alt="博客" width="30px"
-                                            height="30px"></a>
-                                </li>
+                            <img src="images/0.jpg" alt="" id="igwd1" width="300px" height="190px">
 
-                            </ul>
+                            <h6 style="color:black;">今天月色很美，风也温柔。</h6>
+
+                            <div id="share">
+
+                                <ul>
+
+                                    <li>
+                                        <a href="https://github.com/nianme" title="GitHub"><img src="images/github.png" alt="GitHub" width="30px" height="30px"></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://space.bilibili.com/21184907" title="bilibili"><img src="images/bilibili1.png" alt="博客" width="30px" height="30px"></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="tencent://Message/?Uin=1459829778&amp;websiteName=q-zone.qq.com&amp;Menu=yes" title="QQ"><img src="images/qqm.png" alt="QQ" width="30px" height="30px"></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://xgan.me" title="博客"><img src="images/wz.png" alt="博客" width="30px" height="30px"></a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                            <div id="gy">
+                                <a href="" title="关闭页面"><img src="images/gb1.png" alt="" width="20px" height="20px" onclick="custom_close()"></a>
+                            </div>
+
 
                         </div>
-
-                        <div id="gy">
-                            <a href="" title="关闭页面"><img src="images/gb1.png" alt="" width="20px" height="20px"
-                                    onclick="custom_close()"></a>
-                        </div>
-
 
                     </div>
 
                 </div>
-
-            </div>
-        </div>
-
-        <div id="mainleft2">
-
-            <div id="yes2017910">
-                <h5 class="title" id="title"><a class="posttitle" href="https://xgan.me/233">那些年，我们一起错过的青春</a></h5>
             </div>
 
-            <h5 class="titlemin"><span id="year2017">发表与&nbsp;2016&nbsp;6&nbsp;10</span>字数统计&nbsp;:&nbsp;2375</h5>
-            <h6 class="title" id="introductionart">生活还是以它最自然的样子一天一天过着，天冷会回温，雨后会天晴，冬季后春天会再来。而有些人，也以他最自然的方式，逐渐淡出了你的生活。
-            </h6>
+            <div id="mainleft2">
 
-            <img src="https://xgan.me/images/85.jpg" width="610px" height="330px">
+                <div id="yes2017910">
+                    <h5 class="title" id="title"><a class="posttitle" href="https://xgan.me/233">那些年，我们一起错过的青春</a></h5>
+                </div>
 
-            <div id="read">
-                <h5 id="ready"><a class="posttitle" href="https://xgan.me">阅读全文&nbsp;&raquo;</a></h5>
+                <h5 class="titlemin"><span id="year2017">发表与&nbsp;2016&nbsp;6&nbsp;10</span>字数统计&nbsp;:&nbsp;2375</h5>
+                <h6 class="title" id="introductionart">生活还是以它最自然的样子一天一天过着，天冷会回温，雨后会天晴，冬季后春天会再来。而有些人，也以他最自然的方式，逐渐淡出了你的生活。
+                </h6>
+
+                <img src="https://xgan.me/images/85.jpg" width="610px" height="330px">
+
+                <div id="read">
+                    <h5 id="ready"><a class="posttitle" href="https://xgan.me">阅读全文&nbsp;&raquo;</a></h5>
+                </div>
+
             </div>
 
-        </div>
+            <div id="mainleft3">
 
-        <div id="mainleft3">
+                <div id="year2017910">
+                    <h5 class="title" id="title"><a class="posttitle" href="https://xgan.me">印象中的夏天</a></h5>
+                </div>
 
-            <div id="year2017910">
-                <h5 class="title" id="title"><a class="posttitle" href="https://xgan.me">印象中的夏天</a></h5>
+
+                <h5 class="titlemin"><span id="year2017">发表与&nbsp;2016&nbsp;6&nbsp;10</span>字数统计&nbsp;:&nbsp;6544</h5>
+                <h6 class="title" id="introductionart">生活还是以它最自然的样子一天一天过着，天冷会回温，雨后会天晴，冬季后春天会再来。而有些人，也以他最自然的方式，逐渐淡出了你的生活。
+                </h6>
+
+                <img src="https://xgan.me/images/85.jpg" width="610px" height="330px">
+
+                <div id="read">
+                    <h5 id="ready"><a class="posttitle" href="https://xgan.me">阅读全文&nbsp;&raquo;</a></h5>
+                </div>
             </div>
 
+            <footer id="footer">
 
-            <h5 class="titlemin"><span id="year2017">发表与&nbsp;2016&nbsp;6&nbsp;10</span>字数统计&nbsp;:&nbsp;6544</h5>
-            <h6 class="title" id="introductionart">生活还是以它最自然的样子一天一天过着，天冷会回温，雨后会天晴，冬季后春天会再来。而有些人，也以他最自然的方式，逐渐淡出了你的生活。
-            </h6>
+                <div class="container">
 
-            <img src="https://xgan.me/images/85.jpg" width="610px" height="330px">
-
-            <div id="read">
-                <h5 id="ready"><a class="posttitle" href="https://xgan.me">阅读全文&nbsp;&raquo;</a></h5>
-            </div>
-        </div>
-
-        <footer id="footer">
-
-            <div class="container">
-
-                <p>Copyright &copy; 2019 • Theme by : <a class="posttitle" href="http://xgan.me"
-                        target="_self">Canger</a> • Run Time :
-                    <a class="posttitle" href="https://xgan.me/log/index.html" target="_self"><span
+                    <p>Copyright &copy; 2019 • Theme by : <a class="posttitle" href="http://xgan.me" target="_self">Canger</a> • Run Time :
+                        <a class="posttitle" href="https://xgan.me/log/index.html" target="_self"><span
                             id="span_dt_dt"></span></a>
-                </p>
+                    </p>
 
-            </div>
+                </div>
 
-        </footer>
+            </footer>
 
-    </div>
+        </div>
 
     </div>
 
@@ -253,8 +283,7 @@
 
     <div id="music" style="position: fixed; left: 0px; bottom: 0;">
 
-        <iframe src="https://xgan.me/include/music/index.html" id="music" scrolling="no" frameborder="0"
-            height="500px"></iframe>
+        <iframe src="https://xgan.me/include/music/index.html" id="music" scrolling="no" frameborder="0" height="500px"></iframe>
 
     </div>
 
@@ -295,7 +324,7 @@
 
         var OriginTitile = document.title,
             titleTime;
-        document.addEventListener("visibilitychange", function () {
+        document.addEventListener("visibilitychange", function() {
             if (document.hidden) {
                 $('[rel="shortcut icon"]').attr("href", "images/favicon.ico");
                 document.title = "(●—●)喔哟，崩溃啦！";
@@ -303,7 +332,7 @@
             } else {
                 $('[rel="shortcut icon"]').attr("href", "images/favicon.ico");
                 document.title = "(/≧▽≦/)咦！又好了！ " + OriginTitile;
-                titleTime = setTimeout(function () {
+                titleTime = setTimeout(function() {
                     document.title = OriginTitile
                 }, 2000)
             }
@@ -314,7 +343,7 @@
         var oInfo = $(".fixPara");
         var oTop = $("#pro").offset().top;
         var sTop = 0;
-        $(window).scroll(function () {
+        $(window).scroll(function() {
             sTop = $(this).scrollTop();
             if (sTop >= oTop) {
                 $("#pro").css({
@@ -389,57 +418,6 @@
             // 			}
         });
     </script> -->
-
-    <script type="text/javascript">
-        // var browser = {
-        //     versions: function () {
-        //         var u = navigator.userAgent, app = navigator.appVersion;
-        //         return {//移动终端浏览器版本信息
-        //             trident: u.indexOf('Trident') > -1, //IE内核
-        //             presto: u.indexOf('Presto') > -1, //opera内核
-        //             webKit: u.indexOf('AppleWebKit') > -1, //苹果>内核
-        //             gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
-        //             mobile: !!u.match(/AppleWebKit.*Mobile.*/)
-        //                 || !!u.match(/AppleWebKit/), //是否为移动终端
-        //             ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
-        //             android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
-        //             iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
-        //             iPad: u.indexOf('iPad') > -1, //是否iPad
-        //             webApp: u.indexOf('Safari') == -1,
-        //             //是否web应该程序，没有头部与底部
-        //             google: u.indexOf('Chrome') > -1
-        //         };
-        //     }(),
-        //     language: (navigator.browserLanguage || navigator.language).toLowerCase()
-        // }
-        // document.writeln("语言版本: " + browser.language);
-        // document.writeln(" 是否为移动终端: " + browser.versions.mobile);
-
-        //其他的适配代码（后缀名为.js 并引用至网页）
-
-        // 　　< !--
-        //平台、设备和操作系统
-        var system = {
-            win: false,
-            mac: false,
-            xll: false,
-            ipad: false
-        };
-        //检测平台
-        var p = navigator.platform;
-        system.win = p.indexOf("Win") == 0;
-        system.mac = p.indexOf("Mac") == 0;
-        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
-        system.ipad = (navigator.userAgent.match(/iPad/i) != null) ? true : false;
-        //跳转语句，如果是手机访问就自动跳转到" "里的页面
-        if (system.win || system.mac || system.xll || system.ipad) {
-
-        } else {
-
-            window.location.href = "https://xgan.me/";
-        }
-        // -->
-    </script>
 
 </body>
 
