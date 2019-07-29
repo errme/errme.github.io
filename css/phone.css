@@ -90,7 +90,7 @@ body {
 
 .titlemin {
     font-size: 13px;
-    position: relative;
+    /* position: relative; */
     right: -70px;
     margin: 0 0 30px 0;
 }
@@ -106,17 +106,19 @@ body {
     color: black;
     font-size: 14px;
     text-align: left;
-    position: relative;
+    /* position: relative; */
     margin: 0 11% 30px;
     line-height: 22px;
 }
 
 #read {
-    position: relative;
+    /* position: relative; */
     top: 4px;
     left: 40%;
     line-height: 30px;
     color: white;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #ready {
