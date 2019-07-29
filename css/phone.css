@@ -8,16 +8,17 @@ body {
     padding: 0;
     height: 100%;
     text-align: center;
+    margin: 0 auto;
     color: #999;
     /* background: url(https://xgan.me/images/bj3.jpg) no-repeat; */
     /* overflow: hidden; //取消滚动条 */
     overflow-x: hidden;
 }
 
-@font-face {
+/* @font-face {
     font-family: myCatF;
     src: url("https://xgan.me/include/templates/ttf/字魂32号-汪子义星座体.ttf");
-}
+} */
 
 #background {
     position: relative;
@@ -50,48 +51,44 @@ body {
     background: rgba(230, 244, 249, .9);
     width: 100%;
     height: 2700px;
-    position: absolute;
-    /* top: 330px; */
-    top: 620px;
+    position: relative;
+    /* top: 620px; */
     padding: 0;
-    margin: 0 auto;
     z-index: 4;
 }
 
 #mainleft {
-    float: left;
-    position: relative;
+    position: absolute;
     top: 120px;
     margin: 0 0 0 150px;
     background: white;
-    width: 50%;
+    width: 800px;
     height: 700px;
     z-index: 7;
-    clear: both;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #mainleft2 {
-    float: left;
-    position: relative;
+    position: absolute;
     top: 120px;
     margin: 50px 0 0 150px;
     background: white;
-    width: 50%;
+    width: 800px;
     height: 700px;
     z-index: 7;
-    clear: both;
+    margin: 0 auto;
 }
 
 #mainleft3 {
-    float: left;
-    position: relative;
+    position: absolute;
     top: 120px;
     margin: 50px 0 0 150px;
     background: white;
-    width: 50%;
+    width: 800px;
     height: 700px;
     z-index: 7;
-    clear: both;
+    margin: 0 auto;
 }
 
 .title {
@@ -105,9 +102,6 @@ body {
     font-size: 13px;
     position: relative;
     right: -70px;
-    /* line-height: 2px;
-    color: black;
-    line-height: 0; */
     margin: 0 0 30px 0;
 }
 
@@ -178,16 +172,7 @@ body {
     background: white;
 }
 
-/* #mainright {
-    float: right;
-    position: absolute;
-    right: 11rem;
-    top: 120px;
-    background: white;
-    width: 350px;
-    height: 420px;
-    z-index: 6;
-} */
+
 
 #igwd1 {
     margin: 30px 0 20px 0;
