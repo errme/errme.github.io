@@ -301,7 +301,7 @@ li {
 
 /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
 
- ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 11px;
     height: 16px;
     background-color: #F5F5F5;
@@ -380,6 +380,7 @@ body.edge #footer a:after {
 }
 
 @media screen and (min-width: 1000px) {
+
     #wrap.display-menu-tree,
     #wrap.display-menu-tree+#footer {
         width: -webkit-calc(100% - 17.5rem);
@@ -422,6 +423,7 @@ body.theme-white #footer p {
     #footer {
         display: none
     }
+
     #post article {
         margin-top: 0
     }
