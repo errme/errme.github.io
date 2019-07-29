@@ -39,7 +39,7 @@ body {
     height: 620px;
     width: 100%;
     background-size: cover;
-    background-position: center 30%;
+    /* background-position: center 30%; */
     background-repeat: no-repeat;
     margin: 0 auto;
     text-align: center;
