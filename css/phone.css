@@ -114,7 +114,8 @@ body {
 #read {
     position: absolute;
     top: 550px;
-    left: 45%;
+    /* left: 40%; */
+    left: 340px;
     line-height: 30px;
     color: white;
 }
