@@ -260,7 +260,7 @@ body {
 
 #yszm {
     font-size: 17px;
-    font-weight: 550;
+    font-weight: 500;
     margin: 17px 0 0 0;
 }
 
@@ -306,12 +306,19 @@ body {
     transform: scale(1.2);
 }
 
-#introduction #yszm span a:nth-child(1) {
+/* #introduction #yszm span a:nth-child(1) {
     color: #03A9F4 !important
 }
 
 #introduction #yszm span a:nth-child(2) {
     color: #1abc9c !important
+} */
+#intone {
+    color: #03A9F4;
+}
+
+#inttwo {
+    color: #03A9F4;
 }
 
 #music {
