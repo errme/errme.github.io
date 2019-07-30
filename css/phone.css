@@ -141,126 +141,10 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 }
 
-/* #mainleft {
-    position: absolute;
-    top: 120px;
-    margin: 0 0 0 150px;
-    background: white;
-    width: 800px;
-    height: 700px;
-    z-index: 7;
-    margin: 90px auto;
-    display: inline-block;
-}
-
-#mainleft2 {
-    position: absolute;
-    top: 120px;
-    margin: 50px 0 0 150px;
-    background: white;
-    width: 800px;
-    height: 700px;
-    z-index: 7;
-    display: inline-block;
-}
-
-#mainleft3 {
-    position: absolute;
-    top: 120px;
-    margin: 50px 0 0 150px;
-    background: white;
-    width: 800px;
-    height: 700px;
-    z-index: 7;
-    display: inline-block;
-}
-
-.title {
-    font-size: 24px;
-    color: black;
-    line-height: 0;
-    margin: 60px 0 40px 0;
-}
-
-.titlemin {
-    font-size: 13px;
-    position: relative;
-    right: -70px;
-    margin: 0 0 30px 0;
-}
-
-#introductionart {
-    font-family: 宋体;
-    color: black;
-    font-size: 14px;
-    text-align: left;
-    position: relative;
-    margin: 0 10% 30px;
-    line-height: 22px;
-}
-
-#mainleft #ready {
-    position: relative;
-    bottom: 1px;
-    left: 10px;
-}
-
-#typeist {
-    position: relative;
-    top: 80px;
-}
-
-#typeist p {
-    font-size: 14px;
-    line-height: 30px;
-}
-
-#read {
-    position: relative;
-    top: 4px;
-    left: 40%;
-    line-height: 30px;
-    color: white;
-}
-
-#ready {
-    position: relative;
-    top: 4px;
-    right: 5px;
-    width: 110px;
-    height: 30px;
-    font-size: 14px;
-    margin: 40px 0 0 0;
-    border: 1px solid;
-    border-radius: 3px;
-    background-image: linear-gradient(#03A9F4, #03A9F4);
-    color: white;
-}
-
-#ready a {
-    color: white;
-}
-
-#ready:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-}
-
-#year2017 {
-    color: #0000FF;
-    margin: 0 20px 0;
-    font-size: 13px;
-}
-
-#years20190503 {
-    z-index: 999999;
-    background: white;
-} */
-
-
 
 #yszm {
     font-size: 19px;
-    font-weight: 500;
+    font-weight: 550;
     margin: 17px 0 0 0;
 }
 
@@ -314,11 +198,11 @@ body {
     color: #1abc9c !important
 } */
 #intone {
-    color: black;
+    color: #03A9F4;
 }
 
 #inttwo {
-    color: black;
+    color: red;
 }
 
 #music {
