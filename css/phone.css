@@ -112,13 +112,11 @@ body {
 }
 
 #read {
-    /* position: relative; */
-    top: 4px;
+    position: absolute;
+    top: 550px;
     left: 40%;
     line-height: 30px;
     color: white;
-    margin: 0 auto;
-    text-align: center;
 }
 
 #ready {
