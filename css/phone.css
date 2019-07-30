@@ -75,7 +75,7 @@ body {
     top: 120px;
     margin: 40px auto;
     background: white;
-    width: 800px;
+    width: 780px;
     height: 660px;
     z-index: 7;
     display: inline-block;
@@ -107,7 +107,7 @@ body {
     font-size: 15px;
     text-align: left;
     /* position: relative; */
-    margin: 0 92px 30px;
+    margin: 0 80px 30px;
     line-height: 22px;
 }
 
