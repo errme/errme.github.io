@@ -89,7 +89,7 @@ body {
 }
 
 .titlemin {
-    font-size: 13px;
+    font-size: 15px;
     /* position: relative; */
     right: -70px;
     margin: 0 0 30px 0;
@@ -98,16 +98,16 @@ body {
 #year2017 {
     color: #0000FF;
     margin: 0 20px 0;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 #introductionart {
     /* font-family: 宋体; */
     color: black;
-    font-size: 15px;
+    font-size: 17px;
     text-align: left;
     /* position: relative; */
-    margin: 0 80px 30px;
+    margin: 0 83px 30px;
     line-height: 22px;
 }
 
