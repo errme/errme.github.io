@@ -211,14 +211,6 @@
     </div>
 
 
-    <!-- <script> //计算网页页面高度高度
-        var llqgd = document.body.scrollHeight;
-        llq.innerHTML = llqgd;
-    </script> -->
-
-    <!-- <script src="js/background.js"></script> -->
-
-
     <script type="text/javascript">
         function show_date_time() {
             window.setTimeout("show_date_time()", 1000);
@@ -233,7 +225,8 @@
                 f = 60 * (c - a),
                 l = Math.floor(60 * (c - a)),
                 k = Math.floor(60 * (f - l));
-            span_dt_dt.innerHTML = g + " day " + a + " hour " + l + " min " + k + " sccond"
+            // span_dt_dt.innerHTML = g + " day " + a + " hour " + l + " min " + k + " sccond"
+            span_dt_dt.innerHTML = g + " day " + a + " hour " + l + " min "
         }
         show_date_time();
 
