@@ -27,6 +27,8 @@ body {
     /* background: url(https://xgan.me/images/bj3.jpg) no-repeat; */
     /* overflow: hidden; //取消滚动条 */
     overflow-x: hidden;
+    overflow: -Scroll;
+    overflow-y: hidden；
 }
 
 /* @font-face {
