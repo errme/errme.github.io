@@ -11,7 +11,7 @@ var Home = location.href,
 
 var Diaspora = {
 
-    L: function(url, f, err) {
+    L: function (url, f, err) {
         if (url == xhrUrl) {
             return false
         }
@@ -26,11 +26,11 @@ var Diaspora = {
             type: 'GET',
             url: url,
             timeout: 10000,
-            success: function(data) {
+            success: function (data) {
                 f(data)
                 xhrUrl = '';
             },
-            error: function(a, b, c) {
+            error: function (a, b, c) {
                 if (b == 'abort') {
                     err && err()
                 } else {
@@ -41,16 +41,16 @@ var Diaspora = {
         })
     },
 
-    P: function() {
+    P: function () {
         return !!('ontouchstart' in window);
     },
 
-    PS: function() {
+    PS: function () {
         if (!(window.history && history.pushState)) return;
 
-        history.replaceState({u: Home, t: document.title}, document.title, Home)
+        history.replaceState({ u: Home, t: document.title }, document.title, Home)
 
-        window.addEventListener('popstate', function(e) {
+        window.addEventListener('popstate', function (e) {
             var state = e.state;
 
             if (!state) return;
@@ -59,11 +59,11 @@ var Diaspora = {
 
             if (state.u == Home) {
                 $('#preview').css('position', 'fixed')
-                setTimeout(function() {
+                setTimeout(function () {
                     $('#preview').removeClass('show').addClass('trans')
                     $('#container').show()
                     window.scrollTo(0, parseInt($('#container').data('scroll')))
-                    setTimeout(function() {
+                    setTimeout(function () {
                         $('#preview').html('')
                         $(window).trigger('resize')
                     }, 300)
@@ -71,7 +71,7 @@ var Diaspora = {
             } else {
                 Diaspora.loading()
 
-                Diaspora.L(state.u, function(data) {
+                Diaspora.L(state.u, function (data) {
 
                     document.title = state.t;
 
@@ -79,14 +79,14 @@ var Diaspora = {
 
                     Diaspora.preview()
 
-                    setTimeout(function() { Diaspora.player(state.d) }, 0)
+                    setTimeout(function () { Diaspora.player(state.d) }, 0)
                 })
             }
 
         })
     },
 
-    HS: function(tag, flag) {
+    HS: function (tag, flag) {
         var id = tag.data('id') || 0,
             url = tag.attr('href'),
             title = tag.attr('title') || tag.text();
@@ -95,9 +95,9 @@ var Diaspora = {
 
         Diaspora.loading()
 
-        var state = {d: id, t: title, u: url};
+        var state = { d: id, t: title, u: url };
 
-        Diaspora.L(url, function(data) {
+        Diaspora.L(url, function (data) {
 
             if (!$(data).filter('#single').length) {
                 location.href = url;
@@ -108,11 +108,11 @@ var Diaspora = {
 
                 case 'push':
                     history.pushState(state, title, url)
-                break;
+                    break;
 
                 case 'replace':
                     history.replaceState(state, title, url)
-                break;
+                    break;
 
             }
 
@@ -122,22 +122,22 @@ var Diaspora = {
 
             switch (flag) {
 
-                case 'push': 
+                case 'push':
                     Diaspora.preview()
-                break;
+                    break;
 
                 case 'replace':
                     window.scrollTo(0, 0)
                     Diaspora.loaded()
-                break;
+                    break;
             }
 
-            setTimeout(function() {
+            setTimeout(function () {
                 if (!id) id = $('.icon-play').data('id');
                 Diaspora.player(id)
 
                 // get download link
-                $('.content img').each(function() {
+                $('.content img').each(function () {
                     if ($(this).attr('src').indexOf('/uploads/2014/downloading.png') > -1) {
                         $(this).hide()
                         $('.downloadlink').attr('href', $(this).parent().attr('href'))
@@ -152,13 +152,13 @@ var Diaspora = {
         })
     },
 
-    preview: function() {
-        setTimeout(function() {
+    preview: function () {
+        setTimeout(function () {
             $('#preview').addClass('show')
             $('#container').data('scroll', window.scrollY)
-            setTimeout(function() {
+            setTimeout(function () {
                 $('#container').hide()
-                setTimeout(function() {
+                setTimeout(function () {
                     $('#preview').css({
                         'position': 'static',
                         'overflow-y': 'auto'
@@ -171,8 +171,8 @@ var Diaspora = {
         }, 0)
     },
 
-    player: function(id) {
-        var p = $('#audio-'+ id +'-1');
+    player: function (id) {
+        var p = $('#audio-' + id + '-1');
 
         if (!p.length) {
             $('.icon-play').css({
@@ -185,55 +185,55 @@ var Diaspora = {
         p[0].play()
 
         p.on({
-            'timeupdate': function() {
-                $('.bar').css('width', p[0].currentTime / p[0].duration * 100 +'%')
+            'timeupdate': function () {
+                $('.bar').css('width', p[0].currentTime / p[0].duration * 100 + '%')
             },
-            'ended': function() {
+            'ended': function () {
                 $('.icon-pause').removeClass('icon-pause').addClass('icon-play')
             },
-            'playing': function() {
+            'playing': function () {
                 $('.icon-play').removeClass('icon-play').addClass('icon-pause')
-            } 
+            }
         })
     },
 
-    loading: function() {
+    loading: function () {
         var w = window.innerWidth;
-        var css = '<style class="loaderstyle" id="loaderstyle'+ w +'">'+
-                  '@-moz-keyframes loader'+ w +'{100%{background-position:'+ w +'px 0}}'+
-                  '@-webkit-keyframes loader'+ w +'{100%{background-position:'+ w +'px 0}}'+
-                  '.loader'+ w +'{-webkit-animation:loader'+ w +' 3s linear infinite;-moz-animation:loader'+ w +' 3s linear infinite;}'+
-                  '</style>';
+        var css = '<style class="loaderstyle" id="loaderstyle' + w + '">' +
+            '@-moz-keyframes loader' + w + '{100%{background-position:' + w + 'px 0}}' +
+            '@-webkit-keyframes loader' + w + '{100%{background-position:' + w + 'px 0}}' +
+            '.loader' + w + '{-webkit-animation:loader' + w + ' 3s linear infinite;-moz-animation:loader' + w + ' 3s linear infinite;}' +
+            '</style>';
         $('.loaderstyle').remove()
         $('head').append(css)
 
-        $('#loader').removeClass().addClass('loader'+ w).show()
+        $('#loader').removeClass().addClass('loader' + w).show()
     },
 
-    loaded: function() {
+    loaded: function () {
         $('#loader').removeClass().hide()
     },
 
-    F: function(id, w, h) {
+    F: function (id, w, h) {
         var _height = $(id).parent().height(),
             _width = $(id).parent().width(),
             ratio = h / w;
 
         if (_height / _width > ratio) {
-            id.style.height = _height +'px';
-            id.style.width = _height / ratio +'px';
+            id.style.height = _height + 'px';
+            id.style.width = _height / ratio + 'px';
         } else {
-            id.style.width = _width +'px';
-            id.style.height = _width * ratio +'px';
+            id.style.width = _width + 'px';
+            id.style.height = _width * ratio + 'px';
         }
 
-        id.style.left = (_width - parseInt(id.style.width)) / 2 +'px';
-        id.style.top = (_height - parseInt(id.style.height)) / 2 +'px';
+        id.style.left = (_width - parseInt(id.style.width)) / 2 + 'px';
+        id.style.top = (_height - parseInt(id.style.height)) / 2 + 'px';
     }
 
 }
 
-$(function() {
+$(function () {
 
     if (Diaspora.P()) {
         $('body').addClass('touch')
@@ -246,18 +246,18 @@ $(function() {
         cover.w = cover.t.attr('width');
         cover.h = cover.t.attr('height');
 
-        ;(cover.o = function() {
+        ; (cover.o = function () {
             $('#mark').height(window.innerHeight)
         })();
 
         if (cover.t.prop('complete')) {
             // why setTimeout ?
-            setTimeout(function() { cover.t.load() }, 0)
+            setTimeout(function () { cover.t.load() }, 0)
         }
 
-        cover.t.on('load', function() {
+        cover.t.on('load', function () {
 
-            ;(cover.f = function() {
+            ; (cover.f = function () {
 
                 var _w = $('#mark').width(), _h = $('#mark').height(), x, y, i, e;
 
@@ -289,7 +289,7 @@ $(function() {
 
             })();
 
-            setTimeout(function() {
+            setTimeout(function () {
                 $('html, body').removeClass('loading')
             }, 1000)
 
@@ -319,10 +319,10 @@ $(function() {
         $('.pview a').addClass('pviewa')
 
         var T;
-        $(window).on('resize', function() {
+        $(window).on('resize', function () {
             clearTimeout(T)
 
-            T = setTimeout(function() {
+            T = setTimeout(function () {
                 if (!Diaspora.P() && location.href == Home) {
                     cover.o()
                     cover.f()
@@ -332,14 +332,14 @@ $(function() {
                     Diaspora.loading()
                 }
             }, 500)
-        })  
+        })
 
     } else {
 
         $('#single').css('min-height', window.innerHeight)
         $('html, body').removeClass('loading')
-        
-        window.addEventListener('popstate', function(e) {
+
+        window.addEventListener('popstate', function (e) {
             if (e.state) location.href = e.state.u;
         })
 
@@ -348,7 +348,7 @@ $(function() {
         $('.icon-icon, .image-icon').attr('href', '/')
 
         // get download link
-        $('.content img').each(function() {
+        $('.content img').each(function () {
             if ($(this).attr('src').indexOf('/uploads/2014/downloading.png') > -1) {
                 $(this).hide()
                 $('.downloadlink').attr('href', $(this).parent().attr('href')).css('display', 'block')
@@ -359,7 +359,7 @@ $(function() {
 
     }
 
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
         if ($('.scrollbar').length && !Diaspora.P() && !$('.icon-images').hasClass('active')) {
             var st = $(window).scrollTop(),
                 ct = $('.content').height();
@@ -368,7 +368,7 @@ $(function() {
                 st = ct
             }
 
-            $('.scrollbar').width((50 + st) / ct * 100 +'%')
+            $('.scrollbar').width((50 + st) / ct * 100 + '%')
 
             if (st > 80 && window.innerWidth > 800) {
                 $('.subtitle').fadeIn()
@@ -378,13 +378,13 @@ $(function() {
         }
     })
 
-    $(window).on('touchmove', function(e) {
+    $(window).on('touchmove', function (e) {
         if ($('body').hasClass('mu')) {
             e.preventDefault()
         }
     })
 
-    $('body').on('click', function(e) {
+    $('body').on('click', function (e) {
 
         var tag = $(e.target).attr('class') || '',
             rel = $(e.target).attr('rel') || '';
@@ -397,7 +397,7 @@ $(function() {
             case (tag.indexOf('switchmenu') != -1):
                 window.scrollTo(0, 0)
                 $('html, body').toggleClass('mu')
-            break;
+                break;
 
             // next page
             case (tag.indexOf('more') != -1):
@@ -420,7 +420,7 @@ $(function() {
                 tag.html('加载中..').data('status', 'loading')
                 Diaspora.loading()
 
-                Diaspora.L(tag.attr('href'), function(data) {
+                Diaspora.L(tag.attr('href'), function (data) {
                     var link = $(data).find('.more').attr('href');
                     if (link != undefined) {
                         tag.attr('href', link).html('加载更多').data('status', 'loaded')
@@ -428,18 +428,18 @@ $(function() {
                     } else {
                         $('#pager').remove()
                     }
-                    
+
                     var tempScrollTop = $(window).scrollTop();
                     $('#primary').append($(data).find('.post'))
                     $(window).scrollTop(tempScrollTop);
                     Diaspora.loaded()
                     $('html,body').animate({ scrollTop: tempScrollTop + 400 }, 500);
-                }, function() {
+                }, function () {
                     tag.html('加载更多').data('status', 'loaded')
                 })
 
                 return false;
-            break;
+                break;
 
             // post images
             case (tag.indexOf('icon-images') != -1):
@@ -456,8 +456,8 @@ $(function() {
 
                     $('.article').css('height', 'auto')
                     $('.section').css('left', '-100%')
-                    setTimeout(function() {
-                        $('.images').data('height', $('.images').height()).css('height', '0') 
+                    setTimeout(function () {
+                        $('.images').data('height', $('.images').height()).css('height', '0')
                     }, 0)
                 } else {
                     d.addClass('active')
@@ -467,7 +467,7 @@ $(function() {
                     if ($('.icon-images').hasClass('tg')) {
                         $('.section').css('left', 0)
 
-                        setTimeout(function() { $('.article').css('height', '0') }, 0)
+                        setTimeout(function () { $('.article').css('height', '0') }, 0)
                     } else {
                         if (!(Diaspora.P() && window.innerWidth < 700)) {
                             $('.zoom').Chocolat()
@@ -482,20 +482,20 @@ $(function() {
                             r = 80;
                         }
                         $('#jg').justifiedGallery({
-                            margins: m, 
-                            rowHeight : r,
+                            margins: m,
+                            rowHeight: r,
                         }).on('jg.complete', function () {
                             $('.section').css('left', 0)
                             $('.icon-images').addClass('tg')
 
                             d.data('status', '')
                             Diaspora.loaded()
-                            setTimeout(function() { $('.article').css('height', '0') }, 0)
+                            setTimeout(function () { $('.article').css('height', '0') }, 0)
                         })
                     }
 
                 }
-            break;
+                break;
 
             // qrcode
             case (tag.indexOf('icon-wechat') != -1):
@@ -503,21 +503,21 @@ $(function() {
                     $('#qr').toggle()
                 } else {
                     $('.icon-wechat').addClass('tg')
-                    $('#qr').qrcode({ width: 128, height: 128, text: location.href}).toggle()
+                    $('#qr').qrcode({ width: 128, height: 128, text: location.href }).toggle()
                 }
-            break;
+                break;
 
             // audio play
             case (tag.indexOf('icon-play') != -1):
-                $('#audio-'+ $('.icon-play').data('id') +'-1')[0].play()
+                $('#audio-' + $('.icon-play').data('id') + '-1')[0].play()
                 $('.icon-play').removeClass('icon-play').addClass('icon-pause')
-            break;
+                break;
 
             // audio pause
             case (tag.indexOf('icon-pause') != -1):
-                $('#audio-'+ $('.icon-pause').data('id') +'-1')[0].pause()
+                $('#audio-' + $('.icon-pause').data('id') + '-1')[0].pause()
                 $('.icon-pause').removeClass('icon-pause').addClass('icon-play')
-            break;
+                break;
 
             // post like
             case (tag.indexOf('icon-like') != -1):
@@ -527,7 +527,7 @@ $(function() {
                 if (t.prev().hasClass('icon-view')) return;
 
                 classes = classes.split(' ');
-                if(classes[1] == 'active') return;
+                if (classes[1] == 'active') return;
 
                 t.addClass('active')
 
@@ -537,40 +537,40 @@ $(function() {
                     type: 'POST',
                     url: '/index.php',
                     data: 'likepost=' + id[1],
-                    success: function() {
-                        var text = $('#like-'+ id[1]).html(),
-                            patt= /(\d)+/,
+                    success: function () {
+                        var text = $('#like-' + id[1]).html(),
+                            patt = /(\d)+/,
                             num = patt.exec(text);
 
-                        num[0] ++;
-                        $('#like-'+ id[1]).html('<span class="icon-like"></span><span class="count">' + num[0] + '</span>')
+                        num[0]++;
+                        $('#like-' + id[1]).html('<span class="icon-like"></span><span class="count">' + num[0] + '</span>')
                     }
                 })
-            break;
+                break;
 
             // history state
             case (tag.indexOf('cover') != -1):
                 Diaspora.HS($(e.target).parent(), 'push')
                 return false;
-            break;
+                break;
 
             // history state
             case (tag.indexOf('posttitle') != -1):
                 Diaspora.HS($(e.target), 'push')
                 return false;
-            break;
+                break;
 
             // relate post
             case (tag.indexOf('relatea') != -1):
                 Diaspora.HS($(e.target), 'replace')
                 return false;
-            break;
+                break;
 
             // relate post
             case (tag.indexOf('relateimg') != -1):
                 Diaspora.HS($(e.target).parent(), 'replace')
                 return false;
-            break;
+                break;
 
             // prev, next post
             case (rel == 'prev' || rel == 'next'):
@@ -583,26 +583,26 @@ $(function() {
 
                 Diaspora.HS($(e.target), 'replace')
                 return false;
-            break;
+                break;
 
             // quick view
             case (tag.indexOf('pviewa') != -1):
                 $('body').removeClass('mu')
 
-                setTimeout(function() {
+                setTimeout(function () {
                     Diaspora.HS($(e.target), 'push')
                 }, 300)
 
                 return false;
-            break;
+                break;
 
             default:
                 return;
-            break;
+                break;
         }
 
     })
 
-    console.log("%c Github %c","background:#24272A; color:#ffffff","","https://github.com/LoeiFy/Diaspora")
+    console.log("%c Github %c", "background:#24272A; color:#ffffff", "", "https://github.com/LoeiFy/Diaspora")
 
 })
