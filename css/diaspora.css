@@ -167,6 +167,8 @@ audio {
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-mask-box-image: url("/img/logo.png");
+  -ms-mask-box-image: url("/img/logo.png");
+  -moz-mask-box-image: url("/img/logo.png");
   background-color: white;
   width: 111px;
   height: 50px;
