@@ -541,7 +541,7 @@ a.logo:hover {
 
 .site_one_logo {
 	position: absolute;
-	left: 0px;
+	left: 10px;
 	top: 47px;
 	width: 160px;
 	height: 160px;
@@ -554,7 +554,7 @@ a.logo:hover {
 .site_one_logo_scroll {
 	display: none;
 	position: absolute;
-	left: 0px;
+	left: 10px;
 	top: 24px;
 	width: 160px;
 	height: 160px;
