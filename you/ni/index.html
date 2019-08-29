@@ -60,11 +60,11 @@
 		var tutorial = function () {
 			homeBot.message.add({
 				delay: 1000,
-				content: "太好了，下面我们就开始来一些简单的演示。。。"
+				content: "太好了，下面我们就开始来一些简单的演示"
 			}).then(function () {
 				return homeBot.message.add({
 					delay: 1000,
-					content: '你可以提出一些简单的问题，例如：'
+					content: '你可以提出一些简单的问题，例如 : '
 				});
 			}).then(function () {
 				return homeBot.message.add({
@@ -82,7 +82,7 @@
 			}).then(function (res) {
 				return homeBot.message.bot({
 					delay: 500,
-					content: res.value + ' 是个好名字！'
+					content: res.value + ' 是个好名字呀！'
 				});
 				// }).then(function (res) {
 				// 	return homeBot.message.bot({
@@ -94,28 +94,18 @@
 					delay: 1400,
 					content: '这一个小测试，我的功能还没有完善'
 				});
-			}).then(function (res) {
-				return homeBot.message.add({
-					delay: 1200,
-					type: 'embed',
-					content: 'https://giphy.com/embed/v1PSPwbLIrata'
-				});
-			}).then(function (res) {
-				return homeBot.message.add({
-					delay: 1200,
-					type: 'embed',
-					content: '以后会有更多的有趣的事情呀'
-				});
+
+
 				// }).then(function (res) {
 				// 	return homeBot.message.bot({
 				// 		delay: 2500,
 				// 		content: '通过BotUI你还可以做更多的有趣的事情。'
 				// 	});
-				// }).then(function (res) {
-				// 	return homeBot.message.bot({
-				// 		delay: 2500,
-				// 		content: '你可以找到我。'
-				// 	});
+			}).then(function (res) {
+				return homeBot.message.bot({
+					delay: 1500,
+					content: '以后会有更多有趣的事呀'
+				});
 				// }).then(function (res) {
 				// 	return homeBot.message.bot({
 				// 		delay: 1000,
