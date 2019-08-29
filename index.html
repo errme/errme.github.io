@@ -1,463 +1,263 @@
-<!-- https://xgan.me -->
-
-<!-- 间断性更新 hhh -->
-
-<!-- by 苍耳 -->
-
 <!DOCTYPE html>
-
 <html lang="zh-CN" class="loading">
 
 <head>
-
+    <meta name="generator" content="Hexo 3.9.0">
     <meta charset="UTF-8">
-
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-
-    <meta name="keywords" content="一期一会">
-
-    <meta name="description" content="我们像才华横溢的诗歌，无须冥思，就自由生长，句句押韵，在记忆中铭刻剪影，阳光闪烁，边缘耀眼。 - by : 苍耳">
-
-    <meta name="keywords" content="一期一会,苍耳,致">
-
-    <meta name="author" content="Canger,苍耳">
-
-    <!-- <meta name="robots" content="index,follow"> -->
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>一期一会</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
 
-    <link rel="shortcut icon" href="images/favicon.ico" />
+    <meta name="keywords" content="一期一会,苍耳,清新,文艺,">
 
-    <link rel="stylesheet" href="css/asidenav.css">
 
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <meta name="author" content="一期一会">
 
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="alternative" href="atom.xml" title="一期一会" type="application/atom+xml">
 
-    <link rel="stylesheet" href="css/style1.css">
-
-    <script src="js/modernizr.js"></script>
-
-    <script src="js/jquery.disa.js"></script>
-
-    <script src="js/disa.js"></script>
-
-    <script type="text/javascript">
-        //平台、设备和操作系统 
-        var system = {
-            win: false,
-            mac: false,
-            xll: false,
-            ipad: false
-        };
-        //检测平台 
-        var p = navigator.platform;
-        system.win = p.indexOf("Win") == 0;
-        system.mac = p.indexOf("Mac") == 0;
-        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
-        system.ipad = (navigator.userAgent.match(/iPad/i) != null) ? true : false;
-        //跳转语句，如果是手机访问就自动跳转到页面 
-        if (system.win || system.mac || system.xll || system.ipad) { } else {
-            window.location.href = "https://xgan.me/phone.html";
-        }
-    </script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142766624-1"></script>
+    <link rel="icon" href="/img/me.jpg">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/diaspora.css">
+    <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-142766624-1', { 'optimize_id': 'GTM-M8M3M6B' });
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-8691406134231910",
+            enable_page_level_ads: true
+        });
     </script>
+    <!-- <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script> -->
 
 
-    <!-- Anti-flicker snippet (recommended)  -->
-    <style>
-        .async-hide {
-            opacity: 0 !important
-        }
-    </style>
-
-    <script>(function (a, s, y, n, c, h, i, d, e) {
-            s.className += ' ' + y; h.start = 1 * new Date;
-            h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
-            (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
-        })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
-            { 'GTM-M8M3M6B': true });
-    </script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-142766624-1');
-    </script>
-
+    <!-- mejia -->
+    <!-- <script crossorigin="anonymous" integrity="sha384-38qS6ZDmuc4fn68ICZ1CTMDv4+Yrqtpijvp5fwMNdbumNGNJ7JVJHgWr2X+nJfqM"
+        src="https://lib.baomitu.com/require.js/2.3.6/require.min.js"></script> -->
 </head>
 
-<body class="theme-white color-default card  desktop windows chrome not-safari use-sidebar loading">
+</html>
 
+<body class="loading">
+    <span id="config-title" style="display:none">一期一会</span>
     <div id="loader"></div>
+    <div class="nav">
+        <ul id="menu-menu" class="menu">
 
-    <div id="background" style="background-image: url(images/qyqx.png);">
+            <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/whoami/" title="一期一会" target="_blank" rel="noopener">一期一会</a>
+            </li>
 
-        <div class="container">
+            <li class="  menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="https://meai.me/ni/" title="纸篓" target="_self" rel="noopener">纸篓</a>
+            </li>
 
-            <!-- <h1 class="blog-title">Hi , xgan</h1> -->
+            <li class="  menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="https://twitter.com/FechinLi" title="有声" target="_blank" rel="noopener">有声</a>
+            </li>
 
-            <h2 class="blog-description">
+            <li class="  menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="https://xgan.me" title="归档" target="_blank" rel="noopener">归档</a>
+            </li>
 
-                <div id="chakhsu"></div>
+            <li class="  menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="https://xgan.me" title="Q&A" target="_blank" rel="noopener">Q&A</a>
+            </li>
 
-                <script>
-                    var chakhsu = function (r) {
-                        function t() {
-                            return b[Math.floor(Math.random() * b.length)]
-                        }
+        </ul>
 
-                        function e() {
-                            return String.fromCharCode(94 * Math.random() + 33)
-                        }
-
-                        function n(r) {
-                            for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
-                                var l = document.createElement("span");
-                                l.textContent = e(), l.style.color = t(), n.appendChild(l)
-                            }
-                            return n
-                        }
-
-                        function i() {
-                            var t = o[c.skillI];
-                            c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
-                        } /*以下内容自定义修改*/
-                        var l = "我一扑向你，",
-                            o = ["就感到无限的温柔呀。",].map(function (r) {
-                                return r + ""
-                            }),
-                            a = 2,
-                            g = 1,
-                            s = 5,
-                            d = 75,
-                            b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
-                            c = {
-                                text: "",
-                                prefixP: -s,
-                                skillI: 0,
-                                skillP: 0,
-                                direction: "forward",
-                                delay: a,
-                                step: g
-                            };
-                        i()
-                    };
-                    chakhsu(document.getElementById('chakhsu'));
-                </script>
-
-                <div>
-
-            </h2>
-
-        </div>
+        <p id="copyright">
+            <!-- &copy; 2019 一期一会By : Canger -->
+            Copyright © 2019
+        </p>
 
     </div>
+    <div id="container">
 
-    <div id="introduction"><br /><br />
-
-        <a class="posttitle" href="https://xgan.me"><img src="images/logo.jpg" width="90rem" height="90rem"
-                style="border-radius: 50%;"></a>
-
-        <h2 id="yszm"><span><a class="posttitle" href="https://xgan.me">今天月色很美，</a></span><span><a class="posttitle"
-                    href="https://xgan.me">风也温柔。</a></span>
-        </h2>
-
-    </div>
-
-    <div id="subject">
-
-        <div id="mainleft">
-
-            <div id="year2017910">
-                <h5 class="title" id="title"><a class="posttitle" href="https://xgan.me/article/0/wz.html">印象中的夏天</a>
-                </h5>
-            </div>
-
-
-            <h5 class=" titlemin"><span id="year2017">发表与&nbsp;2016&nbsp;6&nbsp;10</span>字数统计&nbsp;:&nbsp;6544</h5>
-            <h6 class="title" id="introductionart">生活还是以它最自然的样子一天一天过着，天冷会回温，雨后会天晴，冬季后春天会再来。而有些人，也以他最自然的方式，逐渐淡出了你的生活。
-            </h6>
-            <img src="https://xgan.me/images/85.jpg" width="610rem" height="330rem">
-
-            <div id="read">
-                <h5 id="ready"><a class="posttitle" href="https://xgan.me">阅读全文&nbsp;&raquo;</a></h5>
-            </div>
-
-        </div>
-
-        <div id="mainright">
-
-            <div id="pro">
-
-                <div class="fixPara">
-
-
-                    <div class="imgwd">
-
-                        <img src="images/0.jpg" alt="" id="igwd1" width="300px" height="190px">
-
-                        <h6 style="color:black;">今天月色很美，风也温柔。</h6>
-
-                        <div id="share">
-
-                            <ul>
-
-                                <li>
-                                    <a href="https://github.com/nianme" title="GitHub"><img src="images/github.png"
-                                            alt="GitHub" width="30px" height="30px"></a>
-                                </li>
-
-                                <li>
-                                    <a href="https://space.bilibili.com/21184907" title="bilibili"><img
-                                            src="images/bilibili1.png" alt="博客" width="30px" height="30px"></a>
-                                </li>
-
-                                <li>
-                                    <a href="tencent://Message/?Uin=1459829778&amp;websiteName=q-zone.qq.com&amp;Menu=yes"
-                                        title="QQ"><img src="images/qqm.png" alt="QQ" width="30px" height="30px"></a>
-                                </li>
-
-                                <li>
-                                    <a href="https://xgan.me" title="博客"><img src="images/wz.png" alt="博客" width="30px"
-                                            height="30px"></a>
-                                </li>
-
-                            </ul>
-
-                        </div>
-
-                        <div id="gy">
-                            <a href="" title="关闭页面"><img src="images/gb1.png" alt="" width="20px" height="20px"
-                                    onclick="custom_close()"></a>
-                        </div>
-
-
-                    </div>
-
+        <div id="screen">
+            <div id="mark">
+                <div class="layer" data-depth="0.4">
+                    <img src="/images/444.jpg" id="cover" crossorigin="anonymous" width="1920" height="1080">
                 </div>
-
             </div>
-        </div>
-
-        <div id="mainleft2">
-
-            <div id="yes2017910">
-                <h5 class="title" id="title"><a class="posttitle" href="https://xgan.me/233">那些年，我们一起错过的青春</a></h5>
+            <div id="vibrant">
+                <svg viewBox="0 0 2880 1620" height="100%" preserveAspectRatio="xMaxYMax slice">
+                    <polygon opacity="0.7" points="2000,1620 0,1620 0,0 600,0 " />
+                </svg>
+                <div></div>
             </div>
-
-            <h5 class="titlemin"><span id="year2017">发表与&nbsp;2016&nbsp;6&nbsp;10</span>字数统计&nbsp;:&nbsp;2375</h5>
-            <h6 class="title" id="introductionart">生活还是以它最自然的样子一天一天过着，天冷会回温，雨后会天晴，冬季后春天会再来。而有些人，也以他最自然的方式，逐渐淡出了你的生活。
-            </h6>
-
-            <img src="https://xgan.me/images/85.jpg" width="610px" height="330px">
-
-            <div id="read">
-                <h5 id="ready"><a class="posttitle" href="https://xgan.me">阅读全文&nbsp;&raquo;</a></h5>
+            <div id="header">
+                <div>
+                    <a class="image-logo" href="/"></a>
+                    <div class="icon-menu switchmenu"></div>
+                </div>
             </div>
 
-        </div>
-
-        <div id="mainleft3">
-
-            <div id="year2017910">
-                <h5 class="title" id="title"><a class="posttitle" href="https://xgan.me">印象中的夏天</a>
-                </h5>
-            </div>
-
-            <h5 class="titlemin"><span id="year2017">发表与&nbsp;2016&nbsp;6&nbsp;10</span>字数统计&nbsp;:&nbsp;6544</h5>
-            <h6 class="title" id="introductionart">生活还是以它最自然的样子一天一天过着，天冷会回温，雨后会天晴，冬季后春天会再来。而有些人，也以他最自然的方式，逐渐淡出了你的生活。
-            </h6>
-
-            <img src="https://xgan.me/images/85.jpg" width="610px" height="330px">
-
-            <div id="read">
-                <h5 id="ready"><a class="posttitle" href="https://xgan.me">阅读全文&nbsp;&raquo;</a></h5>
-            </div>
-        </div>
-
-        <footer id="footer">
-
-            <div class="container">
-
-                <p>Copyright &copy; 2019 • Theme by : <a class="posttitle" href="http://xgan.me"
-                        target="_self">Canger</a> • Run Time :
-                    <a class="posttitle" href="https://xgan.me/log/index.html" target="_self"><span
-                            id="span_dt_dt"></span></a>
+            <div id="post0">
+                <p>九月 09, 2099</p>
+                <h2><a href="/2099/09/09/ni/" title="今晚月色很美" class="posttitle">今晚月色很美</a></h2>
+                <p class="summary">很高兴你能来，也不遗憾你离开。
                 </p>
-
             </div>
 
-        </footer>
+        </div>
+        <div id="primary">
+
+            <div class="post">
+                <a href="/2019/08/28/xia/" title="印象中的夏天">
+                    <img src="/images/xia.jpg" class="cover" width="680" height="440">
+                </a>
+                <div class="else">
+                    <p>八月 28, 2019</p>
+                    <h3><a href="/2019/08/28/xia/" title="印象中的夏天" class="posttitle">印象中的夏天</a></h3>
+                    <p>印象中的夏天是这样开始的，“考试结束，请考生立即停笔…….”，忘记了那天的天空是否很蓝，忘记了云朵是否像往日那般洁白，只记得那时心中弥漫的是一种不知名的情...</p>
+                </div>
+            </div>
+
+
+            <div class="post">
+                <a href="/2018/09/01/bkn/" title="不可能的人">
+                    <img src="/images/bkn.jpg" class="cover" width="680" height="440">
+                </a>
+                <div class="else">
+                    <p>九月 01, 2018</p>
+                    <h3><a href="/2018/09/01/bkn/" title="不可能的人" class="posttitle">不可能的人</a></h3>
+                    <p>每个人心里住了一个不可能的人，这不可能的人给了我们狂喜和遗憾，这些狂喜和遗憾又酿成了回忆。关于那一个心里不可能的人，有人说，就请那些被我们狠狠爱过的人，在...</p>
+                </div>
+            </div>
+
+
+            <div class="post">
+                <a href="/2018/05/20/xg/" title="习惯">
+                    <img src="/images/xg.jpg" class="cover" width="680" height="440">
+                </a>
+                <div class="else">
+                    <p>五月 20, 2018</p>
+                    <h3><a href="/2018/05/20/xg/" title="习惯" class="posttitle">习惯</a></h3>
+                    <p>两个人相爱多久，才可以确定这两个人可以长长久久的走下去。我想是习惯吧。
+                        可是习惯这件事，到底是好是坏呢？
+                        如果对方告诉你，我习惯爱你，你会不会觉得心里还欠...</p>
+                </div>
+            </div>
+
+
+            <div class="post">
+                <a href="/2017/09/10/huan/" title="乍见之欢的心动和久处不厌的心定，你比较喜欢哪一种呢？">
+                    <img src="/images/huan.jpg" class="cover" width="680" height="440">
+                </a>
+                <div class="else">
+                    <p>九月 10, 2017</p>
+                    <h3><a href="/2017/09/10/huan/" title="乍见之欢的心动和久处不厌的心定，你比较喜欢哪一种呢？"
+                            class="posttitle">乍见之欢的心动和久处不厌的心定，你比较喜欢哪一种呢？</a></h3>
+                    <p>在十几岁的时候，我们以为小鹿乱撞才是爱情，以为山盟海誓才是爱情最好的模样，轰轰烈烈才能证明你有多爱我，但爱情真正的模样，是在这些惊心动魄之后的细水长流里，...</p>
+                </div>
+            </div>
+
+
+            <div class="post">
+                <a href="/2015/07/16/laizi/" title="来自历史深处的你">
+                    <img src="/images/han.jpg" class="cover" width="680" height="440">
+                </a>
+                <div class="else">
+                    <p>七月 16, 2015</p>
+                    <h3><a href="/2015/07/16/laizi/" title="来自历史深处的你" class="posttitle">来自历史深处的你</a></h3>
+                    <p>我从扬州城中缓步走来，清风拂过，衣袂飘飘，与秦淮河畔翩然起舞，衣袖掩面，我不禁迷茫了，我是谁 ？我来自何方？
+                        —题记
+                        认识你，并非偶然，我曾经寻觅了许久，...</p>
+                </div>
+            </div>
+
+
+            <div class="post">
+                <a href="/2014/09/08/moon/" title="城里月光">
+                    <img src="/images/moon.jpg" class="cover" width="680" height="440">
+                </a>
+                <div class="else">
+                    <p>九月 08, 2014</p>
+                    <h3><a href="/2014/09/08/moon/" title="城里月光" class="posttitle">城里月光</a></h3>
+                    <p>过往，终究是人有意，时光无情，又或者是时光有义，人无情。
+                        这世间注定有一些人，总要穿越千山万水的辗转流离，才能获得短暂的缠绵与绮丽，相遇时，携带花香，雨景...</p>
+                </div>
+            </div>
+
+
+            <div class="post">
+                <a href="/2013/04/27/gd/" title="没有人是一座孤独的岛屿">
+                    <img src="/images/gd.jpg" class="cover" width="680" height="440">
+                </a>
+                <div class="else">
+                    <p>四月 27, 2013</p>
+                    <h3><a href="/2013/04/27/gd/" title="没有人是一座孤独的岛屿" class="posttitle">没有人是一座孤独的岛屿</a></h3>
+                    <p>我知道孤独有很多种，有些来自空虚，有些发自肺腑。大部分人都因无事可做或分秒必争感到孤独，那些发自肺腑的孤独患者就像战争后的现场，早已血流成河、满目疮痍。
+                        ...</p>
+                </div>
+            </div>
+
+
+        </div>
 
     </div>
-
-    </div>
-
-    <a href="#0" class="cd-top" title="返回顶部">Top</a>
-
-    <script src="js/jquery.cdtop.min.js"></script>
-
-    <script src="js/main.js"></script>
-
-
-
-    <div id="music" style="position: fixed; left: 0px; bottom: 0;">
-
-        <iframe src="https://xgan.me/include/music/index.html" id="music" scrolling="no" frameborder="0"
-            height="500px"></iframe>
-
-    </div>
-
-
-    <!-- <script> //计算网页页面高度高度
-        var llqgd = document.body.scrollHeight;
-        llq.innerHTML = llqgd;
-    </script> -->
-
-    <!-- <script src="js/background.js"></script> -->
-
-
-    <script type="text/javascript">
-        function show_date_time() {
-            window.setTimeout("show_date_time()", 1000);
-            var h = new Date("3/15/2019 08:05:00"),
-                j = new Date,
-                d = j.getTime() - h.getTime(),
-                i = 86400000,
-                b = d / i,
-                g = Math.floor(b),
-                c = 24 * (b - g),
-                a = Math.floor(c),
-                f = 60 * (c - a),
-                l = Math.floor(60 * (c - a)),
-                k = Math.floor(60 * (f - l));
-            // span_dt_dt.innerHTML = g + " day " + a + " hour " + l + " min " + k + " sccond"
-            // span_dt_dt.innerHTML = g + " d " + a + " hr " + l + " m " + k + " sec"
-            span_dt_dt.innerHTML = g + " day " + a + " hour " + l + " min "
-        }
-        show_date_time();
-
-
-
-        console.log("\n %c 欢迎来到 https://xgan.me 站长：苍耳  %c 如果你来访我 我不在 请和我门外的花坐一会儿 它们很温暖 \n\n",
-            "color: white; background: rgba(0,0,0,0.2); padding:5px 0;",
-            "color: gray; background: rgba(0,0,0,0.1); padding:5px 0;");
-
-
-
-        var OriginTitile = document.title,
-            titleTime;
-        document.addEventListener("visibilitychange", function () {
-            if (document.hidden) {
-                $('[rel="shortcut icon"]').attr("href", "images/favicon.ico");
-                document.title = "(●—●)喔哟，崩溃啦！";
-                clearTimeout(titleTime)
-            } else {
-                $('[rel="shortcut icon"]').attr("href", "images/favicon.ico");
-                document.title = "(/≧▽≦/)咦！又好了！ " + OriginTitile;
-                titleTime = setTimeout(function () {
-                    document.title = OriginTitile
-                }, 2000)
-            }
-        });
-    </script>
-
-    <script type="text/javascript">
-        var oInfo = $(".fixPara");
-        var oTop = $("#pro").offset().top;
-        var sTop = 0;
-        $(window).scroll(function () {
-            sTop = $(this).scrollTop();
-            if (sTop >= oTop) {
-                $("#pro").css({
-                    "position": "fixed",
-                    "top": "0"
-                });
-            } else {
-                $("#pro").css({
-                    "position": "static"
-                });
-            }
-        });
-    </script>
-
-    <script language="javascript">
-        // function custom_close() {
-        //     if (confirm("您确定要关闭本页吗？")) {
-        //         window.opener = null;
-        //         window.open('', '_self');
-        //         window.close();
-        //     } else {}
-        // }
-
-        function custom_close() {
-            window.opener = null;
-            window.open('', '_self');
-            window.close();
-        }
-    </script>
-
-
-    <!-- <script type="text/javascript">
-        function typeEffect(element, speed) {
-            var text = $(element).text();
-            $(element).html('');
-            let i = 0;
-            var timer = setInterval(function () {
-                if (i < text.length) {
-                    $(element).append(text.charAt(i));
-                    ++i;
-                } else {
-                    clearInterval();
-                }
-            }, speed);
-        }
-
-        $(document).ready(function () {
-            // var speed = 80;
-            var speed = 300;
-            var sum = 0;
-            var delay = new Array();
-            $('#typeist').children().each(function () {
-                sum += ($(this).text().length - 1) * speed + speed;
-                delay.push(sum);
-            });
-            var plen = delay.length;
-            typeEffect($('h1'), speed);
-            for (let i = 2; i <= plen; ++i) {
-                setTimeout(function () {
-                    $('p:nth-child(' + i + ')').css('display', 'inline-block');
-                    typeEffect($('p:nth-child(' + i + ')'), speed);
-                }, delay[i - 2]);
-            }
-
-            // 			for (var i = 2; i <= plen; ++i) {
-            // 				(function(i) {
-            // 					setTimeout(function() {
-            // 						$('p:nth-child(' + i + ')').css('display', 'inline-block');
-            // 						typeEffect($('p:nth-child(' + i + ')'), speed);
-            // 					}, delay[i - 2]);
-            // 				})(i);
-            // 			}
-        });
-    </script> -->
+    <div id="preview"></div>
 
 </body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 </html>
