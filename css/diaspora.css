@@ -166,13 +166,13 @@ audio {
   background-size: 75px 32px;
   background-repeat: no-repeat;
   background-position: center center;
-  -webkit-mask-box-image: url("/img/91.png");
-  -ms-mask-box-image: url("/img/91.png");
-  -moz-mask-box-image: url("/img/91.png");
+  -webkit-mask-box-image: url("/img/logo.png");
+  -ms-mask-box-image: url("/img/logo.jpg");
+  -moz-mask-box-image: url("/img/logo.jpg");
   background-color: white;
   width: 111px;
   height: 60px;
-  mask-image: url("/img/91.png");
+  mask-image: url("/img/logo.jpg");
   mask-size: contain;
   transition: background-color 0.5s ease-in-out;
 }
