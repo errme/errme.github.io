@@ -389,6 +389,14 @@ body.touch #top {
   top: 16px;
 }
 
+.icon-logo {
+  display: inline-block;
+  color: #fff;
+  font-size: 26px;
+  position: relative;
+  z-index: 4;
+}
+
 .image-icon {
   -webkit-background-size: 24px 24px;
   -moz-background-size: 24px 24px;
