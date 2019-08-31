@@ -170,13 +170,13 @@ audio {
   background-size: 75px 32px;
   background-repeat: no-repeat;
   background-position: center center;
-  -webkit-mask-box-image: url("/img/logo8.png");
-  -ms-mask-box-image: url("/img/logo8.png");
-  -moz-mask-box-image: url("/img/logo8.png");
+  -webkit-mask-box-image: url("/img/logo.png");
+  -ms-mask-box-image: url("/img/logo.png");
+  -moz-mask-box-image: url("/img/logo.png");
   background-color: white;
   width: 100px;
   height: 30px;
-  mask-image: url("/img/logo8.png");
+  mask-image: url("/img/logo.png");
   mask-size: contain;
   transition: background-color 0.5s ease-in-out;
 
