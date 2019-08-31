@@ -175,6 +175,8 @@ audio {
   mask-image: url("/img/logo8.png");
   mask-size: contain;
   transition: background-color 0.5s ease-in-out;
+
+  opacity: 0.5;
 }
 
 body.mu .image-logo {
