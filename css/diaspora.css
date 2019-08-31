@@ -118,6 +118,10 @@ audio {
   height: 0;
 }
 
+#old {
+  font-size: 12px;
+}
+
 #screen {
   position: relative;
 }
