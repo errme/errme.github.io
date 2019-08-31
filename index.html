@@ -252,11 +252,11 @@
         document.addEventListener("visibilitychange", function () {
             if (document.hidden) {
                 $('[rel="shortcut icon"]').attr("href", "images/favicon.ico");
-                document.title = "月遇从云";
+                document.title = "月遇从云,花遇和风";
                 clearTimeout(titleTime)
             } else {
                 $('[rel="shortcut icon"]').attr("href", "images/favicon.ico");
-                document.title = "花遇和风 - " + OriginTitile;
+                document.title = "Hi - " + OriginTitile;
                 titleTime = setTimeout(function () {
                     document.title = OriginTitile
                 }, 2000)
