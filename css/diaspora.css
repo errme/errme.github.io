@@ -1219,7 +1219,8 @@ h1.title {
 }
 
 .content p {
-  margin: 0 0 .8em;
+  /* margin: 0 0 .8em; */
+  margin: 0 0 1.6em;
 }
 
 .content ul,
