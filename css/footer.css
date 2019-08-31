@@ -20,6 +20,11 @@
     transition: 0.5s ease all;
 }
 
+#footer,
+.container {
+    background-color: wheat;
+}
+
 #footer a {
     position: relative;
     white-space: normal
@@ -84,7 +89,8 @@ body.theme-white.theme-sunset #footer {
 #footer h1,
 #footer h2,
 #footer p {
-    text-shadow: 0.0625rem 0.0625rem 0 rgba(0, 0, 0, 0.75)
+    /* text-shadow: 0.0625rem 0.0625rem 0 rgba(0, 0, 0, 0.75) */
+    text-shadow: 0.0625rem 0.0625rem 0 wheat;
 }
 
 body.theme-white #footer h1,
@@ -101,8 +107,4 @@ body.theme-white #footer p {
     #post article {
         margin-top: 0
     }
-}
-
-a {
-    text-decoration: none;
 }
