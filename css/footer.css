@@ -5,14 +5,15 @@
     right: 0;
     clear: both;
     width: 100%;
-    color: #ccc;
-    background: #ffffff;
+    /* color: #ccc;
+    background: #ffffff; */
     text-align: center;
     font-size: .8rem;
     font-weight: 400;
     font-family: Consolas, Menlo, Monaco, "lucida console", "Liberation Mono", "Courier New", "andale mono", monospaceX, monospace, sans-serif;
     padding: 1.25rem 0;
-    background-color: #2c2a2a;
+    /* background-color: #2c2a2a; */
+    background-color: #ffffff;
     -webkit-transition: 0.5s ease all;
     -moz-transition: 0.5s ease all;
     -ms-transition: 0.5s ease all;
@@ -82,11 +83,11 @@ body.theme-white.theme-sunset #footer {
     margin-top: 0.3125rem
 }
 
-#footer h1,
+/* #footer h1,
 #footer h2,
 #footer p {
     text-shadow: 0.0625rem 0.0625rem 0 rgba(0, 0, 0, 0.75)
-}
+} */
 
 body.theme-white #footer h1,
 body.theme-white #footer h2,
