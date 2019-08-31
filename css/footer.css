@@ -5,7 +5,8 @@
     right: 0;
     clear: both;
     width: 100%;
-    color: #ccc;
+    /* color: #ccc; */
+    color: #ffffff;
     background: #ffffff;
     text-align: center;
     font-size: .8rem;
@@ -23,7 +24,8 @@
 
 #footer,
 .container {
-    background-color: wheat;
+    color: #ffffff;
+    background: #ffffff;
     z-index: -1;
 
 }
