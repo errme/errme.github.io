@@ -70,7 +70,6 @@ body.edge #footer a:after {
 body.theme-white #footer {
     background-color: #fafafa;
     color: #777;
-    z-index: 999;
 }
 
 body.theme-white.theme-sunset #footer {
