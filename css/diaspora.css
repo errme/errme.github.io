@@ -174,8 +174,8 @@ audio {
   -ms-mask-box-image: url("/img/logo8.png");
   -moz-mask-box-image: url("/img/logo8.png");
   background-color: white;
-  width: 111px;
-  height: 45px;
+  width: 100px;
+  height: 30px;
   mask-image: url("/img/logo8.png");
   mask-size: contain;
   transition: background-color 0.5s ease-in-out;
