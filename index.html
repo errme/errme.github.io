@@ -247,11 +247,11 @@
         document.addEventListener("visibilitychange", function () {
             if (document.hidden) {
                 $('[rel="shortcut icon"]').attr("href", "images/favicon.ico");
-                document.title = "(●—●)喔哟，崩溃啦！";
+                document.title = "月遇从云";
                 clearTimeout(titleTime)
             } else {
                 $('[rel="shortcut icon"]').attr("href", "images/favicon.ico");
-                document.title = "(/≧▽≦/)咦！又好了！ " + OriginTitile;
+                document.title = "花遇和风" + OriginTitile;
                 titleTime = setTimeout(function () {
                     document.title = OriginTitile
                 }, 2000)
