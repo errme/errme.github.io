@@ -1,0 +1,12 @@
+var canvas = document.getElementById("canvasElem");
+var context = canvas.getContext('2d');
+canvas.width = 300;
+canvas.height = 200;
+canvas.style.border = '2px solid blue';
+context.beginPath();
+context.moveTo(50, 70);
+context.lineTo(100, 50);
+context.lineTo(100, 150);
+context.closePath();
+context.stroke();
+// context.fill();

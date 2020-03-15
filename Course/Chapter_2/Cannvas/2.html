@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="canvasElem">
+        你的浏览器不支持canvas
+    </canvas>
+    <script>
+        var canvas = document.getElementById("canvasElem");
+        var context = canvas.getContext('2d');
+        canvas.width = 300;
+        canvas.height = 200;
+        canvas.style.border = '2px solid blue';
+        context.strokeRect(100, 50, 70, 100);
+        context.fillRect(100, 50, 70, 100);
+        context.clearRect(100, 50, 30, 50);
+    </script>
+</body>
+
+</html>

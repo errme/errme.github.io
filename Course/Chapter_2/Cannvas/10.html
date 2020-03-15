@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="cvs">      
+        你的浏览器不兼容
+    </canvas>
+    <script>
+        var cvs = document.getElementById("cvs");
+        var ctx = cvs.getContext("2d");
+        cvs.width = "600";
+        cvs.height = "600";
+        cvs.style.background = "black";
+        var time = 0;
+
+        function draw() {
+            //清除画布内容
+            ctx.clearRect(0, 0, 600, 600);
+
+            //画地球的轨道
+            ctx.strokeStyle = "white";
+            ctx.beginPath();
+            ctx.arc(300, 300, 180, 0, 360, false);
+            ctx.closePath();
+            ctx.stroke();
+
+            //画太阳
+            ctx.beginPath();
+            ctx.arc(300, 300, 20, 0, 360, false);
+            ctx.closePath();
+            ctx.fillStyle = "red";
+            ctx.fill();
+
+            ctx.save();
+            //画地球
+            ctx.translate(300, 300);
+            ctx.rotate(time * 365 / 360 * Math.PI / 180);
+            ctx.beginPath();
+            ctx.arc(180, 0, 10, 0, 360, false);
+            ctx.closePath();
+            ctx.fillStyle = "blue";
+            ctx.fill();
+
+            //画月球的轨道
+            ctx.translate(180, 0);
+            ctx.beginPath();
+            ctx.arc(0, 0, 30, 0, 360, false);
+            ctx.closePath();
+            ctx.strokeStyle = "whith";
+            ctx.stroke();
+
+            ctx.save();
+            //画月球
+            ctx.rotate(time * 365 * Math.PI / 180);
+            ctx.beginPath();
+            ctx.arc(30, 0, 5, 0, 360, false);
+            ctx.closePath;
+            ctx.fillStyle = "yellow";
+            ctx.fill();
+
+            ctx.restore();
+            ctx.restore();
+            // ctx.restore();
+
+            ctx.translate(0, 0);
+            time = time + 1;
+        }
+        setInterval(draw, 100);
+    </script>
+</body>
+
+</html>
