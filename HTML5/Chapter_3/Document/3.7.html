@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            position: relative;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: aquamarine;
+            position: absolute;
+            top: 100px;
+            left: 50px;
+        }
+        .container{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            position: absolute;
+            top: 100px;
+            left: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" draggable="true"></div>
+    <div class="container"></div>
+</body>
+<script>
+    var box = document.querySelector(".box");
+    var container = document.querySelector(".container");
+    box.addEventListener("drag",function(){
+        console.log(1);
+    });
+    box.addEventListener("drafleave",function(){
+        console.log(2);
+    });
+    box.addEventListener("dragstart",function(){
+        this.style.backgroundColor = "pink";
+        console.log(3);
+    });
+    box.addEventListener("dragend",function(ev){
+        this.style.backgroundColor = "";
+        ev.preventDefault();
+        console.log(4);
+    });
+    container.addEventListener("dragenter",function(ev){
+        this.style.backgroundColor = "pink";
+        ev.preventDefault();
+        console.log(5);
+    });
+    container.addEventListener("dragover",function(ev){
+        this.style.backgroundColor = "yellow";
+        ev.preventDefault();
+        console.log(6);
+    });
+    container.addEventListener("drop",function(){
+        this.style.backgroundColor = "black";
+        console.log(7);
+    });
+</script>
+</html>

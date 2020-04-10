@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropzone{
+            width: 200px;
+            height: 100px;
+            border: 2px dashed black;
+            text-align: center;
+            padding-top: 100px;
+            color: black;
+        }
+        .preview img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="dropzone" class="dropzone">
+        拖拽文件到此处
+    </div>
+    <div id="preview" class="preview"></div>
+</body>
+<script>
+    var dropzone = document.getElementById("dropzone");
+    dropzone.addEventListener("drop",function(e){
+        [].forEach.call(e.dataTransfer.files,function(file){
+            var fileReader = new FileReader();
+            fileReader.readAsDataURL(file);
+            fileReader.onload = function(){
+                var img = document.createElement("img");
+                img.src = fileReader.result;
+                document.getElementById("preview").appendChild(img);
+            }
+        });
+        e.preventDefault();
+    });
+    dropzone.addEventListener("dragover",function(e){
+        e.preventDefault();
+    });
+</script>
+</html>

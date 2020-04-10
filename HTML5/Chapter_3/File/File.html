@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropzone {
+            width: 200px;
+            height: 200px;
+            border: 2px dashed black;
+            text-align: center;
+            padding-top: 190px;
+            color: azure;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="dropzone" class="dropzone"></div>
+    <div id="output" class="output"></div>
+</body>
+<script>
+    var dropzone = document.getElementById("dropzone");
+    dropzone.addEventListener("drop", function (e) {
+        var html = "你一共选择了" + e.dataTransfer.files.length + "个文件<br>";
+        [].forEach.call(e.dataTransfer.files, function (file) {
+            html += getFileInfo(file);
+        });
+        // for(let i = 0;i < e.dataTransfer.files.length;i++){
+        //     html += getFileInfo(e.dataTransfer.files[i]);
+        // }
+        document.getElementById("output").innerHTML = html;
+    });
+    dropzone.addEventListener("dragover", function (e) {
+        e.preventDefault();
+    });
+    function getFileInfo(file) {
+        var aMultiples = ["KB", "MB", "GB", "TB"];
+        var sizeInfo;
+        var info = "文件名称 : " + file.name;
+        for (var aMultiple = 0, nApprox = file.size / 1024; nApprox > 1; nApprox /= 1024, aMultiple++) {
+            sizeInfo = nApprox.toFixed(3) + " " + aMultiples[aMultiple];
+        }
+        info += ";大小 : " + sizeInfo;
+        info += ";类型" + file.type;
+        return info + "<br>"
+    }
+</script>
+
+</html>

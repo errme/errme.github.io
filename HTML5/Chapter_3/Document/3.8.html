@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .dropzone{
+        width: 200px;
+        height: 200px;
+        border: 2px dashed black;
+        text-align: center;
+        padding-top: 100px;
+        color: aqua;
+    }
+</style>
+<body>
+    <div id="dropzone" class="dropzone"></div>
+    <div id="output" class="output"></div>
+</body>
+<script>
+    var dropzone = document.getElementById("dropzone");
+    dropzone.addEventListener("drop",function(e){
+        var html = "你选择了" + e.dataTransfer.files.length + "个文件，文件信息如 : <br>";
+        [].forEach.call(e.dataTransfer.file,function(){
+            html += getFileInfo(file);
+        });
+    });
+    dropzone.addEventListener("dragover",function(e){
+
+    });
+    function getFileInfo(file){
+        
+    }
+</script>
+</html>
