@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="./jQuery/jquery-3.4.1.min.js"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="slidershow" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#slidershow" datta-slide-to="0"></li>
+            <li data-target="#slidershow" datta-slide-to="1"></li>
+            <li data-target="#slidershow" datta-slide-to="2"></li>
+            <li data-target="#slidershow" datta-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <a href=""><img src="./images/1.gif" alt="" style="height: 260px; margin: 0 auto;"></a>
+                <div class="carousel-caption">
+                    <h3>标题1</h3>
+                    <p>描述1</p>
+                </div>
+            </div>
+            <div class="item">
+                <a href=""><img src="./images/2.gif" alt="" style="height: 260px; margin: 0 auto;"></a>
+                <div class="carousel-caption">
+                    <h3>标题2</h3>
+                    <p>描述2</p>
+                </div>
+            </div>
+            <div class="item">
+                <a href=""><img src="./images/3.gif" alt="" style="height: 260px; margin: 0 auto;"></a>
+                <div class="carousel-caption">
+                    <h3>标题3</h3>
+                    <p>描述3</p>
+                </div>
+            </div>
+            <div class="item">
+                <a href=""><img src="./images/4.gif" alt="" style="height: 260px; margin: 0 auto;"></a>
+                <div class="carousel-caption">
+                    <h3>标题4</h3>
+                    <p>描述4</p>
+                </div>
+            </div>
+            <!-- 控制器 在轮播图下面 -->
+            <a href="#slidershow" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#slidershow" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
