@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="username">
+    <input type="button" value="localStorageId设置数据" id="localStorageId">
+    <input type="button" value="localStorageId获取数据" id="getlocalStorageId">
+    <input type="button" value="localStorageId删除数据" id="removelocalStorageId">
+
+    <script>
+        document.getElementById("localStorageId").onclick = function(){
+            var username = document.getElementById("username").value;
+            window.localStorage.setItem("username",username);
+        }
+        document.getElementById("getlocalStorageId").onclick = function(){
+            var username = window.localStorage.getItem("username");
+            alert(username);
+        }
+        document.getElementById("removelocalStorageId").onclick = function(){
+            window.localStorage.removeItem("username");
+        }
+    </script>
+</body>
+</html>
