@@ -13,9 +13,9 @@ function banner() {
     }
 
     var myData = new Array();
-    myData[0] = { pc: "https://cdn.jsdelivr.net/gh/nianme/ni/images/banner_1.png", mb: "https://cdn.jsdelivr.net/gh/nianme/ni/images/banner_sm_1.png" };
-    myData[1] = { pc: "https://cdn.jsdelivr.net/gh/nianme/ni/images/banner_2.png", mb: "https://cdn.jsdelivr.net/gh/nianme/ni/images/banner_sm_2.png" };
-    myData[2] = { pc: "https://cdn.jsdelivr.net/gh/nianme/ni/images/banner_3.png", mb: "https://cdn.jsdelivr.net/gh/nianme/ni/images/banner_sm_3.png" };
+    myData[0] = { pc: "./images/banner_1.png", mb: "./images/banner_sm_1.png" };
+    myData[1] = { pc: "./images/banner_2.png", mb: "./images/banner_sm_2.png" };
+    myData[2] = { pc: "./images/banner_3.png", mb: "./images/banner_sm_3.png" };
 
     var templatePoint = _.template($("#template_point").html());
     var templateImage = _.template($("#template_image").html());

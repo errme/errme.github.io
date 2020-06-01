@@ -309,5 +309,5 @@ var pio = new Paul_Pio({
         ],
     },
     "night": "night()",
-    "model": ["https://errr.me/live2d/models/snow_miku/model.json","https://errr.me/live2d/models/pio/model.json"]
+    "model": ["https://xgan.me/ni/live2d/models/snow_miku/model.json","https://xgan.me/ni/live2d/models/pio/model.json"]
 });
